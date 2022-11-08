@@ -1,0 +1,72 @@
+/* pages/recommendedDaily/recommendedDaily.wxss */
+.postion{
+  display: flex; 
+  justify-content: center;
+}
+.font-settings {
+  /*字体设置*/
+  font-family: cursive ;/*方正舒体*/
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;/*字体位置*/
+  color: rgb(29, 28, 28);
+  /*容器设置*/
+  /* background-color: green; */
+  /* width: 30px;
+  height: 50px; */
+  margin-top: 30rpx;
+  margin-left: 70rpx;
+  margin-right: 70rpx;
+  margin-bottom: 20rpx;
+}
+.title{
+  font-family: cursive ;/*方正舒体*/
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;/*字体位置*/
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.btns{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+button{
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.btns{
+  display: flex;
+  flex-direction: row;
+  margin:20 auto;
+  position:fixed;
+  bottom:20px;
+  justify-content: center;
+  width: 82%;
+}
+.btn{
+  margin-right: 10rpx;
+  /* height: 100rpx; */
+  width:70% ;
+  color: rgb(54, 52, 52);
+  font-size: 50rpx ;
+  font-family: cursive ;
+  border-radius: 10px;
+  background-color: rgb(127, 255, 212) ;
+}
+image{
+  width: 600rpx;
+  height: 600rpx;
+  margin-top: 50rpx;
+  margin-left: 70rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 3rpx solid #425552;
+}
+.img{
+  /*  阴影 */
+box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,7 @@
+
+<!-- 主按钮键 -->
+<view style="width: 514rpx; height: 169rpx; display: block; box-sizing: content-box">
+<button class="btn" bindtap="gotoPageTi" style="position: relative; left: 58rpx; top: 0rpx; width: 643rpx; height: 231rpx; display: block; box-sizing: border-box">每日答题</button>
+<button class="btn" bindtap="gotoPageLearn" style="width: 643rpx; height: 231rpx; display: block; box-sizing: border-box; left: 58rpx; top: 0rpx; position: relative">每日推荐</button>
+<button class="btn" bindtap="gotoPageAsk" style="position: relative; left: 58rpx; top: 0rpx; width: 643rpx; height: 231rpx; display: block; box-sizing: border-box">健康咨询</button>
+</view>

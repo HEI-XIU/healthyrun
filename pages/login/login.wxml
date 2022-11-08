@@ -1,0 +1,21 @@
+<view class="login-container">
+  <image src='/images/testPhoto/logo.png' class="img"></image>
+  <view class="title">欢迎来到步不停</view>
+  <view class="login-box">
+    <label>用户名 :</label>
+    <input placeholder="请输入用户名"/>
+    <label>密码 :</label>
+    <input placeholder="请输入密码"/>
+    <!-- <view class="inputs">
+            <view class="user">用户名:<input class="username" type="text" placeholder="请输入用户名" placeholder-style="" bindinput="name" maxlength="10"></input>
+            </view>
+            <view class="pwd">密码:<input class="password" type="password" placeholder="请输入密码" placeholder-style="" bindinput="pw" maxlength="10"></input>
+            </view>
+        </view> -->
+
+    <button bindtap="loginNow" class="login-btn" style="position: relative; left: 0rpx; top: 14rpx">立即登录</button>
+    <view class="three-line">一一一一一第三方登录一一一一一</view>
+    <button class="login-btn" style="background-color: green; position: relative; left: 0rpx; top: -24rpx">微信登录</button>
+    <view class="enroll">没有账户？ 注册</view>
+  </view>
+</view>
