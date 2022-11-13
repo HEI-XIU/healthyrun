@@ -1,6 +1,6 @@
 {
     "pages": [
-      "pages/personinfo/note/note",
+      
       "pages/login/login",
       "pages/home/home",
       "pages/RunningCircle/RunningCircle",
@@ -10,7 +10,7 @@
       "pages/home/AnswerQuestionsDaily/AnswerQuestionsDaily",
       "pages/home/recommendedDaily/recommendedDaily",
       "pages/home/ask/ask",
-
+      "pages/personinfo/note/note",
       "pages/personinfo/concern/concern",
       "pages/personinfo/fans/fans",
       "pages/personinfo/EditYourProfile/EditYourProfile",
