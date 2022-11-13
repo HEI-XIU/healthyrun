@@ -1,0 +1,84 @@
+/* pages/personinfo/EditYourProfile/EditYourProfile.wxss */
+image{
+  
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  margin-left: 500rpx;
+  border-radius: 200px;
+  overflow: hidden;
+  border: 3rpx solid #425552;
+}
+.img{
+  /*  阴影 */
+  justify-content: left;
+  align-items: center;
+  box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.15);
+  display : flex ; 
+}
+.name {
+  height: 100rpx;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100rpx;
+  box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.15);
+}
+.sex{
+  height: 100rpx;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100rpx;
+  box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.15);
+}
+.birthday{
+  height: 100rpx;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100rpx;
+  box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.15);
+}
+.signature{
+  height: 100rpx;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100rpx;
+  box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.15); 
+}
+.btn{
+  height: 100rpx;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100rpx;
+  
+}
+.btn1{
+  margin-left: 10rpx;
+  width: 30rpx;
+  border-radius: 40rpx;
+  background-color: #B3F0DE;
+}
+.btn2{
+  margin-left: 10rpx;
+  width: 30rpx;
+  border-radius: 40rpx;
+}
+.submit_btn{
+  width: 30rpx;
+  border-radius: 40rpx;
+  background-color: #B3F0DE;
+  width: 100%;
+  position: fixed;
+  bottom: 30rpx
+}
+.submit{
+  margin-left: 10rpx;
+  width: 30rpx;
+  border-radius: 40rpx;
+  background-color: #B3F0DE;
+}

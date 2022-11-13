@@ -1,0 +1,9 @@
+<!--引入wxml文件  -->
+<import src="../templates/templates.wxml"/>
+ 
+<view wx:for="{{arrys}}" wx:key="">
+  <view class='item' bindtap='itemclick' data-item='{{item}}'>
+    <!--和普通标签一样使用，is对应的是templates中的name  data是传入template值  -->
+    <template is="template01" data="{{item}}"/>
+  </view>
+</view>

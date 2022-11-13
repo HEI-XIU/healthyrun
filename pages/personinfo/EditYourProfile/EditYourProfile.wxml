@@ -1,0 +1,32 @@
+<!--pages/personinfo/EditYourProfile/EditYourProfile.wxml-->
+<view class="mianbox">
+  <view class="img">
+    <view>头像：</view>
+    <image class="avatar" src="/static/images/avatar.png"></image>
+  </view>
+  <view class="name">
+    <view>昵称：</view>
+    <input placeholder="用户名小Z" />
+
+  </view>
+  <view class="sex">
+    <view>性别：</view>
+    <view class="btn">
+      <button class="btn1" size="mini">男</button>
+      <button class="btn2" size="mini">女</button>
+    </view>
+
+  </view>
+  <view class="birthday">
+    <view>生日：</view>
+    <input placeholder="2022-11-11" />
+  </view>
+  <view class="signature">
+    <view>签名：</view>
+    <input placeholder="每个人都有快乐的时候，你呢？" />
+  </view>
+</view>
+
+<view class='submit_btn'>
+  <button class="submit">提交</button>
+</view>

@@ -1,5 +1,6 @@
 {
     "pages": [
+      "pages/personinfo/note/note",
       "pages/login/login",
       "pages/home/home",
       "pages/RunningCircle/RunningCircle",
@@ -9,6 +10,10 @@
       "pages/home/AnswerQuestionsDaily/AnswerQuestionsDaily",
       "pages/home/recommendedDaily/recommendedDaily",
       "pages/home/ask/ask",
+
+      "pages/personinfo/concern/concern",
+      "pages/personinfo/fans/fans",
+      "pages/personinfo/EditYourProfile/EditYourProfile",
 
         "pages/index/index",
         
@@ -34,7 +39,7 @@
         {
           "pagePath": "pages/RunningCircle/RunningCircle",
           "text": "跑友圈",
-          "iconPath": "images/Running1.png",
+          "iconPath": "images/RunningMan.png",
           "selectedIconPath": "images/Running1.png",
           "selectedColor": "#000000",
           "color": "＃696969"

@@ -1,0 +1,29 @@
+/* pages/personinfo/fans/fans.wxss */
+.userbox{
+  display: flex;
+  background-color: rgb(193, 219, 219);
+   border-top: 4rpx solid rgba(255, 255, 255, 0.3);
+   border-radius: 15rpx;
+}
+.user{
+  font-weight: bold;
+  font-size: 45rpx;
+}
+.message{
+  font-size: 25rpx;
+  color: rgb(134, 133, 132);
+}
+.btn{
+  color: rgb(0, 0, 0);
+  background-color: rgb(156, 160, 158);
+  height: 60rpx;
+  margin-left: 270rpx;
+  margin-top :30rpx;
+}
+.img {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20rpx;
+}
