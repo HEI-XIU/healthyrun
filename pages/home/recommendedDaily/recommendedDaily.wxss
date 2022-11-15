@@ -54,7 +54,8 @@ button{
   font-size: 50rpx ;
   font-family: cursive ;
   border-radius: 10px;
-  background-color: rgb(127, 255, 212) ;
+  background-color: #B3F0DE ;
+  box-shadow: 12rpx 12rpx 8rpx rgba(0, 0, 0, 0.15);
 }
 image{
   width: 600rpx;
@@ -64,9 +65,9 @@ image{
   margin-bottom: 20rpx;
   border-radius: 10px;
   overflow: hidden;
-  border: 3rpx solid #425552;
+  border: 3rpx solid #B3F0DE;
 }
 .img{
   /*  阴影 */
-box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.15);
+box-shadow: 12rpx 12rpx 8rpx rgba(0, 0, 0, 0.15);
 }

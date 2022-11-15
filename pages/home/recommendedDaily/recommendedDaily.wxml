@@ -10,8 +10,8 @@
   </text>
   </view>
 <view class="btns">
-  <button class="btn" size="mini">下一个</button>
-  <button class="btn"size="mini">上一个</button>
+  <button class="btn" size="mini">上一个</button>
+  <button class="btn"size="mini">下一个</button>
 </view>
 
 
