@@ -76,12 +76,12 @@
       <swiper-item>
         <view class="content">
           <view class="left">
-            <block wx:for="{{list}}" wx:key="index">
+            <block wx:for="{{list2}}" wx:key="index">
               <template is="item" data="{{...item}}" wx:if="{{index%2==0}}"></template>
             </block>
           </view>
           <view class="right">
-            <block wx:for="{{list}}" wx:key="index">
+            <block wx:for="{{list2}}" wx:key="index">
               <template is="item" data="{{...item}}" wx:if="{{index%2==1}}"></template>
             </block>
           </view>
@@ -106,12 +106,12 @@
       <swiper-item>
         <view class="content">
           <view class="left">
-            <block wx:for="{{list}}" wx:key="index">
+            <block wx:for="{{list1}}" wx:key="index">
               <template is="item" data="{{...item}}" wx:if="{{index%2==0}}"></template>
             </block>
           </view>
           <view class="right">
-            <block wx:for="{{list}}" wx:key="index">
+            <block wx:for="{{list1}}" wx:key="index">
               <template is="item" data="{{...item}}" wx:if="{{index%2==1}}"></template>
             </block>
           </view>
