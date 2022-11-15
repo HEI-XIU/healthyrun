@@ -1,6 +1,5 @@
 {
   "usingComponents": {},
-  "navigationBarBackgroundColor": "#B3F0DE",
-  "navigationBarTitleText": "每日答题",
-  "backgroundColor": "#B3F0DE"
+  "navigationBarBackgroundColor": "#7FFFD4",
+  "navigationBarTitleText": "每日答题"
 }

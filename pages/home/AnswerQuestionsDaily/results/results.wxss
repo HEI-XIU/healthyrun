@@ -1,0 +1,38 @@
+/* pages/results/results.wxss */
+page {
+  background-color: #B3F0DE;
+}
+.page {
+  padding: 30rpx;
+}
+.mw-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.page-score {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top:20rpx;
+  padding-bottom:20rpx;
+}
+.score-num {
+  font-size:100rpx;
+  color:green;
+}
+
+.page-footer {
+  margin-top:50rpx;
+  text-align: center;
+}
+.text-xxl{
+  font-size: 25px;
+}
+.margin-top-sm{
+  font-size: 15px;
+}
+.cu-btn{
+  background-color:#72C6AC;
+}

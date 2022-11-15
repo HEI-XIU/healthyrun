@@ -1,1 +1,20 @@
 <!--pages/AnswerQuestionsDaily/AnswerQuestionsDaily.wxml-->
+<!-- <button  class = "btn" bindtap='gotoPageTi'>每日答题</button> -->
+
+<view class="title1">
+  <text decode="{{true}}" style="position: relative; left: 12rpx; top: 158rpx; width: 736rpx; height: 99rpx; display: block; box-sizing: border-box">· 运动健身相关  ·</text>
+</view>
+
+<view class="title2">
+  <text decode="{{true}}" style="position: relative; left: 139rpx; top: 202rpx; width: 479rpx; height: 99rpx; display: block; box-sizing: border-box">知识答题
+  </text>
+  </view>
+
+<view class="title3">
+  <text decode="{{true}}" style="position: relative; left: 68rpx; top: 415rpx; width: 619rpx; height: 87rpx; display: block; box-sizing: border-box">“生命在于运动,运动源于健康”
+  </text>
+  </view>
+
+<view class="btns" bindtap="gotoTest" style="position: fixed; left: 229rpx; top: 896rpx; width: 293rpx; height: 141rpx; display:flex; box-sizing: border-box">
+  <button class="btn" bindtap="gotoTest" size="mini" style="position: relative; left: 3rpx; top: 26rpx; width: 291rpx; height: 90rpx; display: block; box-sizing: border-box; font-size: 46rpx !important" >开始答题</button>
+</view>

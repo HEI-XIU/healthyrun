@@ -1,0 +1,40 @@
+<view class="page">
+  <view class="padding">
+    <view class='page-head'>
+      <view style="width: 326rpx; height: 50rpx; display: block; box-sizing: border-box">共5题，满分100分</view>
+      <view class='page-score' style="position: relative; left: 0rpx; top: 71rpx">
+        <text class="score-num text-red text-bold" style="position: relative; left: 3rpx; top: -10rpx">{{totalScore}}分</text>
+      </view>
+    </view>
+    <view class='page-footer' style="width: 694rpx; height: 296rpx; display: block; box-sizing: border-box">
+      <view class='padding flex text-center text-grey bg-white radius margin-bottom' style="position: relative; left: 38rpx; top: -5rpx; width: 504rpx; height: 345rpx; display: block; box-sizing: border-box">
+        <view class='flex flex-sub flex-direction solid-right' style="position: relative; left: 195rpx; top: 223rpx; width: 312rpx; height: 99rpx; display: block; box-sizing: border-box">
+          <view class="margin-top-sm" style="position: relative; width: 221rpx; height: 50rpx; display: block; box-sizing: border-box; left: -221rpx; top: -139rpx">
+            答对
+            </view> 
+            <view class="text-xxl text-red" style="position: relative; left: -261rpx; top: -66rpx; width: 300rpx; height: 50rpx; display: block; box-sizing: border-box; color: rgb(8, 75, 46)">{{5-wrong}}题
+            </view>
+
+        </view>
+        <view class='flex flex-sub flex-direction solid-right' style="position: relative; width: 263rpx; height: 99rpx; display: block; box-sizing: border-box; left: 282rpx; top: 150rpx">
+          <view class="margin-top-sm" style="position: relative; width: 165rpx; height: 50rpx; display: block; box-sizing: border-box; left: -59rpx; top: -165rpx">
+            答错</view>
+          </view> 
+          <view class="text-xxl text-gray" style="position: relative; width: 132rpx; height: 45rpx; display: block; box-sizing: border-box; left: 237rpx; top: 10rpx; color: gray;">{{wrong}}题
+          </view>
+   
+        <view class='flex flex-sub flex-direction' style="position: relative; width: 216rpx; height: 99rpx; display: block; box-sizing: border-box; left: 479rpx; top: 1rpx">
+          <view class="margin-top-sm" style="position: relative; left: -40rpx; top: -162rpx; width: 155rpx; height: 50rpx; display: block; box-sizing: border-box">
+            正确率</view> 
+            <view class="text-green text-xxl" style="position: relative; width: 155rpx; height: 52rpx; display: block; box-sizing: border-box; left: -33rpx; top: -87rpx; color: rgb(138, 10, 10)">
+            {{zql}}%
+          </view>
+        </view>
+      </view>
+      <view class="flex padding flex-direction" style="position: relative; left: 0rpx; top: 22rpx; width: 694rpx; height: 261rpx; display: block; box-sizing: border-box">
+        <button bindtap="toDoTestAgain" hover-class="other-button-hover" class="cu-btn bg-red round lg" style="position: relative; left: 0rpx; top: 26rpx"> 再答一次 </button>
+        <button bindtap="toIndex" hover-class="other-button-hover" class="cu-btn line-red round lg margin-top" style="position: relative; left: 0rpx; top: 52rpx"> 返回首页 </button>
+      </view>
+    </view>
+  </view>
+</view>

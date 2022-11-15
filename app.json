@@ -1,67 +1,64 @@
 {
-    "pages": [
+  "pages": [
+    "pages/login/login",
+    "pages/home/home",
+    "pages/RunningCircle/RunningCircle",
+    "pages/message/message",
+    "pages/personinfo/personinfo",
+
+    "pages/home/AnswerQuestionsDaily/AnswerQuestionsDaily",
+    "pages/home/AnswerQuestionsDaily/test/test",
+    "pages/home/AnswerQuestionsDaily/results/results",
+    "pages/home/recommendedDaily/recommendedDaily",
+    "pages/home/ask/ask",
+
+      "pages/index/index",
       
-      "pages/login/login",
-      "pages/home/home",
-      "pages/RunningCircle/RunningCircle",
-      "pages/message/message",
-      "pages/personinfo/personinfo",
-
-      "pages/home/AnswerQuestionsDaily/AnswerQuestionsDaily",
-      "pages/home/recommendedDaily/recommendedDaily",
-      "pages/home/ask/ask",
-      "pages/personinfo/note/note",
-      "pages/personinfo/concern/concern",
-      "pages/personinfo/fans/fans",
-      "pages/personinfo/EditYourProfile/EditYourProfile",
-
-        "pages/index/index",
-        
-        "pages/logs/logs"
-        
-    ],
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "步不停",
-        "navigationBarTextStyle": "black"
-    },
-    "tabBar": {
-      "color": "＃7FFFD4",
-      "selectedColor": "＃7FFFD4",
-      "list": [
-        {
-          "pagePath": "pages/home/home",
-          "text": "首页",
-          "iconPath": "images/home.png",
-          "selectedIconPath": "images/home-active.png"
-        },
-        {
-          "pagePath": "pages/RunningCircle/RunningCircle",
-          "text": "跑友圈",
-          "iconPath": "images/RunningMan.png",
-          "selectedIconPath": "images/Running1.png",
-          "selectedColor": "#000000",
-          "color": "＃696969"
-        },
-        {
-          "pagePath": "pages/message/message",
-          "text": "消息",
-          "iconPath": "images/message.png",
-          "selectedIconPath": "images/message-active.png",
-          "selectedColor": "#000000",
-          "color": "＃696969"
-        },
-        {
-          "pagePath": "pages/personinfo/personinfo",
-          "text": "个人",
-          "iconPath": "images/person.png",
-          "selectedIconPath": "images/person-active.png",
-          "selectedColor": "#000000",
-          "color": "＃696969"
-        }
-      ]
-    },
-    "style": "v2",
-    "sitemapLocation": "sitemap.json"
+      "pages/logs/logs"
+      
+  ],
+  "window": {
+      "backgroundTextStyle": "light",
+      "navigationBarBackgroundColor": "#fff",
+      "navigationBarTitleText": "步不停",
+      "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "＃7FFFD4",
+    "selectedColor": "＃7FFFD4",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-active.png"
+      },
+      {
+        "pagePath": "pages/RunningCircle/RunningCircle",
+        "text": "跑友圈",
+        "iconPath": "images/Running1.png",
+        "selectedIconPath": "images/Running1.png",
+        "selectedColor": "#000000",
+        "color": "＃696969"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "images/message.png",
+        "selectedIconPath": "images/message-active.png",
+        "selectedColor": "#000000",
+        "color": "＃696969"
+      },
+      {
+        "pagePath": "pages/personinfo/personinfo",
+        "text": "个人",
+        "iconPath": "images/person.png",
+        "selectedIconPath": "images/person-active.png",
+        "selectedColor": "#000000",
+        "color": "＃696969"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
 }
