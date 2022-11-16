@@ -1,0 +1,9 @@
+<!--pages/home/userchat/userchat.wxml-->
+<!-- <text>pages/home/userchat/userchat.wxml</text> -->
+
+
+
+<image class="image_radius" src='/images/testPhoto/user1.jpg' style="position: relative; left: 25rpx; top: 77rpx"></image>
+<view class="ctn" style="width: 443rpx; height: 97rpx; display: block; box-sizing: border-box; border-radius: 10px; position: relative; left: 177rpx; top: -29rpx">Hi~ 你跑的很快诶！！</view>
+<view class="ctn2"  style="width: 699rpx; height: 54rpx; display: block; box-sizing: border-box; border-radius: 20px; position: relative; left: 25rpx; top: 660rpx">请输入聊天内容...</view>
+<image src="/images/testPhoto/keyboard.jpg" style="position: relative; left: 0rpx; top: 677rpx; width: 747rpx; height: 497rpx; display: inline-block; box-sizing: border-box"></image>

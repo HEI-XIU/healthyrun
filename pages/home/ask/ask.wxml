@@ -1,2 +1,84 @@
 <!--pages/ask/ask.wxml-->
-<text>pages/ask/ask.wxml</text>
+<!-- <text>pages/ask/ask.wxml</text> -->
+
+
+<!-- <view class="container1"> -->
+<view class="view1" style="width: 700rpx; height: 189rpx; display: block; box-sizing: border-box; border-radius: 20px; position: relative; left: 25rpx; top: 32rpx" ></view>
+
+<cover-view class="view2"  style="position: relative; left: 197rpx; top: -150rpx; width: 208rpx; height: 56rpx; display: block; box-sizing: border-box">周吉广医生</cover-view>
+
+<cover-view class="view3" style="position: relative; left: 197rpx; top: -138rpx; width: 152rpx; border-radius: 5px; height: 37rpx; display: block; box-sizing: border-box">个人简介</cover-view>
+
+<cover-view class="view4" style="width: 208rpx; height: 37rpx; display: block; box-sizing: border-box; position: relative; left: 177rpx; top: -133rpx">杭州市第一人民医院</cover-view>
+
+<cover-view class="view5" style="width: 129rpx; height: 56rpx; display: block; box-sizing: border-box; border-radius: 20px; position: relative; left: 554rpx; top: -266rpx">咨询</cover-view>
+
+<image class="image_radius" src='/images/testPhoto/doctor1.jpg' style="position: relative; left: 39rpx; top: -318rpx; width: 130rpx; height: 130rpx; display: inline-block; box-sizing: border-box"></image>
+
+
+
+
+<view class="view1" style="width: 700rpx; height: 189rpx; display: block; box-sizing: border-box; border-radius: 20px; position: relative; left: 25rpx; top: -237rpx" ></view>
+
+<cover-view class="view2"  style="position: relative; left: 177rpx; top: -399rpx; width: 208rpx; height: 56rpx; display: block; box-sizing: border-box">孙忆枫医生</cover-view>
+
+<cover-view class="view3" style="position: relative; left: 177rpx; top: -391rpx; width: 152rpx; border-radius: 5px; height: 37rpx; display: block; box-sizing: border-box">个人简介</cover-view>
+
+<cover-view class="view4" style="width: 208rpx; height: 37rpx; display: block; box-sizing: border-box; position: relative; left: 150rpx; top: -391rpx">杭州市骨伤医院</cover-view>
+
+<cover-view class="view5" style="width: 129rpx; height: 56rpx; display: block; box-sizing: border-box; border-radius: 20px; position: relative; left: 554rpx; top: -529rpx">咨询</cover-view>
+
+<cover-image class="image_radius" src='/images/testPhoto/doctor2.jpg' style="position: relative; left: 30rpx; top: -585rpx; width: 140rpx; height: 140rpx; display: inline-block; box-sizing: border-box"></cover-image>
+
+
+
+
+<view class="view1" style="width: 700rpx; height: 189rpx; display: block; box-sizing: border-box; border-radius: 20px; position: relative; left: 25rpx; top: -512rpx" ></view>
+
+<cover-view class="view2"  style="position: relative; left: 177rpx; top: -662rpx; width: 208rpx; height: 56rpx; display: block; box-sizing: border-box">李天泽医生</cover-view>
+
+<cover-view class="view3" style="position: relative; left: 185rpx; top: -662rpx; width: 152rpx; border-radius: 5px; height: 37rpx; display: block; box-sizing: border-box">个人简介</cover-view>
+
+<cover-view class="view4" style="width: 208rpx; height: 37rpx; display: block; box-sizing: border-box; position: relative; left: 177rpx; top: -666rpx">浙江大学第一附属医院</cover-view>
+
+<cover-view class="view5" style="width: 129rpx; height: 56rpx; display: block; box-sizing: border-box; border-radius: 20px; position: relative; left: 554rpx; top: -804rpx">咨询</cover-view>
+
+<cover-image class="image_radius" src='/images/testPhoto/doctor3.jpg' style="position: relative; left: 33rpx; top: -860rpx; width: 140rpx; height: 140rpx; display: inline-block; box-sizing: border-box"></cover-image>
+
+
+
+
+
+
+<view class="view1" style="width: 700rpx; height: 189rpx; display: block; box-sizing: border-box; border-radius: 20px; position: relative; left: 25rpx; top: -785rpx" ></view>
+
+<cover-view class="view2"  style="position: relative; left: 177rpx; top: -949rpx; width: 208rpx; height: 56rpx; display: block; box-sizing: border-box">赵雨医生</cover-view>
+
+<cover-view class="view3" style="position: relative; left: 197rpx; top: -949rpx; width: 152rpx; border-radius: 5px; height: 37rpx; display: block; box-sizing: border-box">个人简介</cover-view>
+
+<cover-view class="view4" style="width: 208rpx; height: 37rpx; display: block; box-sizing: border-box; position: relative; left: 185rpx; top: -939rpx">浙江大学第二附属医院</cover-view>
+
+<cover-view class="view5" style="width: 129rpx; height: 56rpx; display: block; box-sizing: border-box; border-radius: 20px; position: relative; left: 554rpx; top: -1077rpx">咨询</cover-view>
+
+<cover-image class="image_radius" src='/images/testPhoto/doctor4.jpg' style="position: relative; left: 33rpx; top: -1133rpx; width: 140rpx; height: 140rpx; display: inline-block; box-sizing: border-box"></cover-image>
+
+
+
+
+
+
+
+<view class="view1" style="width: 700rpx; height: 189rpx; display: block; box-sizing: border-box; border-radius: 20px; position: relative; left: 25rpx; top: -1056rpx" ></view>
+
+<cover-view class="view2"  style="position: relative; left: 177rpx; top: -1220rpx; width: 208rpx; height: 56rpx; display: block; box-sizing: border-box">胡允医生</cover-view>
+
+<cover-view class="view3" style="position: relative; left: 205rpx; top: -1220rpx; width: 152rpx; border-radius: 5px; height: 37rpx; display: block; box-sizing: border-box">个人简介</cover-view>
+
+<cover-view class="view4" style="width: 208rpx; height: 37rpx; display: block; box-sizing: border-box; position: relative; left: 185rpx; top: -1220rpx">杭州市第二人民医院</cover-view>
+
+<cover-view class="view5" style="width: 129rpx; height: 56rpx; display: block; box-sizing: border-box; border-radius: 20px; position: relative; left: 554rpx; top: -1349rpx">咨询</cover-view>
+
+<cover-image class="image_radius" src='/images/testPhoto/doctor5.jpg' style="position: relative; left: 33rpx; top: -1404rpx; width: 140rpx; height: 140rpx; display: inline-block; box-sizing: border-box"></cover-image>
+
+
+

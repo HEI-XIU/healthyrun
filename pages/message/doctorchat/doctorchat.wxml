@@ -1,0 +1,14 @@
+<!--pages/home/doctorchat/doctorchat.wxml-->
+<!-- <text>pages/home/doctorchat/doctorchat.wxml</text> -->
+<image class="image_radius" src='/images/testPhoto/doctor1.jpg' style="position: relative; left: 25rpx; top: 77rpx"></image>
+<view class="ctn" style="width: 443rpx; height: 47rpx; display: block; box-sizing: border-box; border-radius: 10px; position: relative; left: 154rpx; top: -14rpx">您有什么健康问题需要咨询吗？</view>
+<view class="ctn2"  style="width: 699rpx; height: 54rpx; display: block; box-sizing: border-box; border-radius: 20px; position: relative; left: 25rpx; top: 727rpx">请输入聊天内容...</view>
+<image src="/images/testPhoto/keyboard.jpg" style="position: relative; left: 0rpx; top: 727rpx; width: 747rpx; height: 497rpx; display: inline-block; box-sizing: border-box"></image>
+<image class="image_radius" src='/images/testPhoto/user2.jpg' style="position: relative; left: 608rpx; top: -520rpx"></image>
+<view class="ctn3" style="width: 493rpx; height: 97rpx; display: block; box-sizing: border-box; border-radius: 10px; position: relative; left: 104rpx; top: -635rpx">您好我的小腿肌肉在跑完步后非常的酸痛有什么解决办法吗？</view>
+
+
+<image class="image_radius" src='/images/testPhoto/doctor1.jpg' style="position: relative; left: 25rpx; top: -549rpx"></image>
+<view class="ctn" style="width: 543rpx; height: 145rpx; display: block; box-sizing: border-box; border-radius: 10px; position: relative; left: 154rpx; top: -674rpx">您肌肉酸痛可能是因为跑步前没有充分拉伸导致的，建议跑步前一定要进行拉伸。</view>
+<image class="image_radius" src='/images/testPhoto/user2.jpg' style="position: relative; left: 608rpx; top: -625rpx"></image>
+<view class="ctn3" style="width: 493rpx; height: 47rpx; display: block; box-sizing: border-box; border-radius: 10px; position: relative; left: 104rpx; top: -716rpx">那现在我有什么办法能减轻酸痛呢？</view>

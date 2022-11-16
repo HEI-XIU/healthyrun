@@ -1,2 +1,48 @@
 <!--pages/message/message.wxml-->
-<text>pages/message/message.wxml</text>
+<view class="msg1" style="width: 175rpx; height: 54rpx; display: block; box-sizing: border-box; position: relative; left: 25rpx; top: 31rpx">医生消息</view>
+
+<view class="msg1" style="width: 175rpx; height: 54rpx; display: block; box-sizing: border-box; position: relative; left: 25rpx; top: 260rpx">全部消息</view>
+
+
+
+<image class="image_radius" src='/images/testPhoto/doctor1_original.jpg' style="position: relative; left: 26rpx; top: 20rpx"></image>
+<button class="btn" bindtap="gotoDoctoeChat" style="width: 308rpx; height: 54rpx; display: block; box-sizing: border-box; left: -58rpx; top: -106rpx; position: relative">周吉广医生</button>
+<view class="msg2" style="width: 416rpx; height: 33rpx; display: block; box-sizing: border-box; position: relative; left: 164rpx; top: -91rpx">那现在我有什么办法能减轻酸痛呢？</view>
+<view class="time" style="width: 97rpx; height: 33rpx; display: block; box-sizing: border-box; position: relative; left: 583rpx; top: -193rpx">1分钟前</view>
+<cover-image class="red_dot" src="/images/testPhoto/red_dot.jpg" style="position: relative; left: 99rpx; top: -224rpx"></cover-image>
+
+
+<image class="image_radius" src='/images/testPhoto/user1.jpg' style="position: relative; left: 26rpx; top: 20rpx"></image>
+<button class="btn" bindtap="gotoUserChat" style="width: 308rpx; height: 54rpx; display: block; box-sizing: border-box; left: -60rpx; top: -104rpx; position: relative">胡小小</button>
+<view class="msg2" style="width: 258rpx; height: 33rpx; display: block; box-sizing: border-box; position: relative; left: 164rpx; top: -102rpx">Hi~ 你跑的很快诶！！</view>
+<view class="time" style="width: 97rpx; height: 33rpx; display: block; box-sizing: border-box; position: relative; left: 583rpx; top: -193rpx">1分钟前</view>
+<cover-image class="red_dot" src="/images/testPhoto/red_dot.jpg" style="position: relative; left: 99rpx; top: -224rpx"></cover-image>
+
+
+<image class="image_radius" src='/images/testPhoto/user2.jpg' style="position: relative; left: 25rpx; top: -97rpx"></image>
+<button class="btn" style="width: 308rpx; height: 54rpx; display: block; box-sizing: border-box; left: -60rpx; top: -225rpx; position: relative">李天泽zzz</button>
+<view class="msg2" style="width: 175rpx; height: 29rpx; display: block; box-sizing: border-box; position: relative; left: 170rpx; top: -222rpx">你的作品好赞。</view>
+<view class="time" style="width: 97rpx; height: 33rpx; display: block; box-sizing: border-box; position: relative; left: 583rpx; top: -298rpx">01:55</view>
+
+
+<image class="image_radius" src='/images/testPhoto/user3.jpg' style="position: relative; left: 25rpx; top: -189rpx"></image>
+<button class="btn" style="width: 308rpx; height: 54rpx; display: block; box-sizing: border-box; left: -58rpx; top: -310rpx; position: relative">李赫</button>
+<view class="msg2" style="width: 237rpx; height: 33rpx; display: block; box-sizing: border-box; position: relative; left: 164rpx; top: -306rpx">哇，可以加好友吗？</view>
+<view class="time" style="width: 97rpx; height: 33rpx; display: block; box-sizing: border-box; position: relative; left: 583rpx; top: -386rpx">12:20</view>
+
+
+
+
+<image class="image_radius" src='/images/testPhoto/user4.jpg' style="position: relative; left: 25rpx; top: -289rpx"></image>
+<button class="btn" style="width: 308rpx; height: 54rpx; display: block; box-sizing: border-box; left: -60rpx; top: -414rpx; position: relative">孙忆枫</button>
+<view class="msg2" style="width: 308rpx; height: 29rpx; display: block; box-sizing: border-box; position: relative; left: 162rpx; top: -414rpx">Hi~ 可以和你做朋友吗！！</view>
+<view class="time" style="width: 97rpx; height: 33rpx; display: block; box-sizing: border-box; position: relative; left: 579rpx; top: -497rpx">04-18</view>
+
+
+
+
+
+<image class="image_radius" src='/images/testPhoto/user5.jpg' style="position: relative; left: 25rpx; top: -377rpx"></image>
+<button class="btn" style="width: 308rpx; height: 54rpx; display: block; box-sizing: border-box; left: -60rpx; top: -514rpx; position: relative">李怡悦</button>
+<view class="msg2" style="width: 308rpx; height: 29rpx; display: block; box-sizing: border-box; position: relative; left: 112rpx; top: -502rpx">求分享跑步心得~~</view>
+<view class="time" style="width: 97rpx; height: 33rpx; display: block; box-sizing: border-box; position: relative; left: 579rpx; top: -575rpx">04-17</view>

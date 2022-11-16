@@ -1,1 +1,50 @@
 /* pages/ask/ask.wxss */
+
+/* 整体框架 */
+.view1 {
+  box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.15);
+}
+
+
+/* 医生名字 */
+.view2{
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-size:20px;
+  text-align: center;
+}
+
+/* 个人简介 */
+.view3{
+  font-size:12px;
+  color: rgb(109, 108, 106);
+  background-color: rgb(228, 226, 224);
+  text-align: center;
+  line-height: 20px;
+}
+
+
+/* 医院 */
+.view4{
+  font-size: 10px;
+  color: rgb(180, 178, 175);
+  text-align: center;
+  line-height: 20px;
+}
+
+
+/* 咨询 */
+.view5{
+  font-size:12px;
+  color: red;
+  border: 2rpx solid red ;
+  text-align: center;
+  line-height: 28px;
+}
+
+/* 医生头像 */
+.image_radius {
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+}
+

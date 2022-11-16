@@ -12,6 +12,8 @@
     "pages/home/recommendedDaily/recommendedDaily",
     "pages/home/ask/ask",
 
+    "pages/message/doctorchat/doctorchat",
+      "pages/message/userchat/userchat",
       "pages/index/index",
       
       "pages/personinfo/concern/concern",
