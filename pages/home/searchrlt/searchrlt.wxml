@@ -1,0 +1,39 @@
+<!--pages/home/searchrlt/searchrlt.wxml-->
+
+
+
+
+<view class="view1" style="width: 579rpx; height: 88rpx; display: block; box-sizing: border-box; border-radius: 30px; left: 34rpx; top: 28rpx; position: relative"></view>
+
+<image class="image_radius" src='/images/testPhoto/search.png'  style="position: relative; left: 34rpx; top: -61rpx"></image>
+
+<view class="view2" style="width: 127rpx; height: 58rpx; display: block; box-sizing: border-box; position: relative; left: 155rpx; top: -149rpx">跑步</view>
+
+<image class="image_radius" src='/images/testPhoto/friend.png'  style="position: relative; left: 633rpx; top: -568rpx"></image>
+
+
+
+<image src='/images/testPhoto/B2.JPG' style="position: relative; left: -55rpx; top: -60rpx; width: 319rpx; height: 449rpx; display: inline-block; box-sizing: border-box"></image>
+<view style="width: 230rpx; height: 39rpx; display: block; box-sizing: border-box; position: relative; left: 34rpx; top: -62rpx">只有跑出来的美丽</view>
+<image class="image_radius" src='/images/testPhoto/collection/c1.JPG' style="position: relative; left: 30rpx; top: -62rpx; width: 69rpx; height: 58rpx; display: inline-block; box-sizing: border-box"></image>
+<view class="view3" style="width: 195rpx; height: 39rpx; display: block; box-sizing: border-box; position: relative; left: 107rpx; top: -121rpx">踏着春天的气息</view>
+
+
+<image src='/images/testPhoto/B3.JPG' style="position: relative; left: 383rpx; top: -661rpx; width: 339rpx; height: 449rpx; display: inline-block; box-sizing: border-box"></image>
+<view style="width: 339rpx; height: 39rpx; display: block; box-sizing: border-box; position: relative; left: 387rpx; top: -663rpx">多少次挥汗如雨</view>
+<image class="image_radius" src='/images/testPhoto/collection/c2.JPG' style="position: relative; left: 383rpx; top: -666rpx; width: 69rpx; height: 58rpx; display: inline-block; box-sizing: border-box"></image>
+<view class="view3" style="width: 255rpx; height: 39rpx; display: block; box-sizing: border-box; position: relative; left: 451rpx; top: -720rpx">管他终点有多远</view>
+
+
+
+<image src='/images/testPhoto/B4.JPG' style="position: relative; left: 383rpx; top: -679rpx; width: 339rpx; height: 449rpx; display: inline-block; box-sizing: border-box"></image>
+<view style="width: 297rpx; height: 39rpx; display: block; box-sizing: border-box; position: relative; left: 387rpx; top: -672rpx">萧瑟的秋风，挡不住...</view>
+<image class="image_radius" src='/images/testPhoto/collection/c3.JPG' style="position: relative; left: 375rpx; top: -668rpx; width: 69rpx; height: 58rpx; display: inline-block; box-sizing: border-box"></image>
+<view class="view3" style="width: 255rpx; height: 39rpx; display: block; box-sizing: border-box; position: relative; left: 451rpx; top: -726rpx">伟大的反义词不是...</view>
+
+
+
+<image src='/images/testPhoto/B5.JPG' style="position: relative; left: 24rpx; top: -1280rpx; width: 339rpx; height: 449rpx; display: inline-block; box-sizing: border-box"></image>
+<view style="width: 319rpx; height: 39rpx; display: block; box-sizing: border-box; position: relative; left: 23rpx; top: -1273rpx">心中坚定的信念，脚下...</view>
+<image class="image_radius" src='/images/testPhoto/collection/c4.JPG' style="position: relative; left: 9rpx; top: -1260rpx; width: 69rpx; height: 58rpx; display: inline-block; box-sizing: border-box"></image>
+<view class="view3" style="width: 255rpx; height: 39rpx; display: block; box-sizing: border-box; position: relative; left: 78rpx; top: -1317rpx">只要从骨子里热爱...</view>

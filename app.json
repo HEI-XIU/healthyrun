@@ -12,6 +12,11 @@
     "pages/home/recommendedDaily/recommendedDaily",
     "pages/home/ask/ask",
 
+    "pages/home/search/search",
+    "pages/home/searchrlt/searchrlt",
+    "pages/home/fabu/fabu",
+    "pages/home/duifangzhuye/duifangzhuye",
+
     "pages/message/doctorchat/doctorchat",
       "pages/message/userchat/userchat",
       "pages/index/index",

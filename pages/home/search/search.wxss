@@ -1,0 +1,42 @@
+
+
+
+.image_radius {
+  height: 50px;
+  width: 50px;
+  /* border-radius: 30px; */
+}
+
+
+.view1{
+
+  background-color: rgb(250, 249, 248);
+}
+
+.view2{
+  font-size: 20px;
+  color: rgb(208, 210, 211);
+}
+
+.view3{
+  font-size:15px;
+  color: rgb(173, 173, 173);
+  background-color: rgb(247, 245, 243);
+  text-align: center;
+  line-height: 20px;
+}
+
+
+.view4{
+  font-size:20px;
+}
+
+.view5{
+  font-size: 15px;
+  color: rgb(160, 158, 155);
+}
+
+.view6{
+  font-size: 15px;
+  color: rgb(150, 147, 144);
+}

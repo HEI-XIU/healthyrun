@@ -1,0 +1,209 @@
+<!--pages/home/duifangzhuye/duifangzhuye.wxml-->
+
+<!-- <import src="/components/noData.vue.wxml" /><template name="77cb05e5"></template> -->
+<view class="_div data-v-107b1d86 public-index-wrap">
+  <!-- <scroll-view scroll-y="{{true}}" bindscrolltolower="handleProxy" data-eventid="{{'9'}}" data-comkey="{{$k}}" class="_scroll-view data-v-107b1d86" style=" {{('height:' + '100vh' + ';')}}"> -->
+    <view class="_div data-v-107b1d86 user-wrap" wx:if="{{!userInfo}}">
+      <view class="_div data-v-107b1d86 user-l" catchtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <image src="/images/testPhoto/user2.jpg" class="_img data-v-107b1d86" style="position: relative; left: 0rpx; top: 0rpx"></image>
+        <view class="_div data-v-107b1d86">李天泽zzz</view>
+      </view>
+
+      <view class="_div data-v-107b1d86 user-r">
+        <image bindtap="gotoPageSetting" src="/static/images/setting_icon.png" mode="widthFix" class="_img data-v-107b1d86"></image>
+      </view>
+    </view>
+    <view class="_div data-v-107b1d86 user-wrap" wx:else>
+      <view class="_div data-v-107b1d86 user-l">
+        <image src="{{userInfo.avatarUrl}}" class="_img data-v-107b1d86"></image>
+        <view class="_div data-v-107b1d86">{{userInfo.nickName}}</view>
+      </view>
+      <view class="_div data-v-107b1d86 user-r">
+
+        <image src="/static/images/setting_icon.png" mode="widthFix" class="_img data-v-107b1d86"></image>
+      </view>
+    </view>
+    <view class="_div data-v-107b1d86 Personalizedsignature">每个人都有快乐的时候，你呢？</view>
+    <view class="_div data-v-107b1d86 user-focus" ref="informationMain">
+      <view bindtap="gotoPageconcern" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_div data-v-107b1d86"><label class="_span data-v-107b1d86">{{focusObj.follow}}</label>
+        <view class="_p data-v-107b1d86">关注</view>
+      </view>
+      <view bindtap="gotoPagefans" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_div data-v-107b1d86"><label class="_span data-v-107b1d86">{{focusObj.fans}}</label>
+        <view class="_p data-v-107b1d86">粉丝</view>
+      </view>
+      <view class="_div data-v-107b1d86"><label class="_span data-v-107b1d86">{{focusObj.collection + focusObj.like || 1024 }}</label>
+        <view class="_p data-v-107b1d86">人气</view>
+      </view>
+    </view>
+
+    <view class='topTabSwiper'>
+      <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}' data-current="0" bindtap='checkCurrent'>笔记</view>
+      <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}' data-current="1" bindtap='checkCurrent'>收藏</view>
+      <view class='tab  {{currentData == 2 ? "tabBorer" : ""}}' data-current="2" bindtap='checkCurrent'>喜欢</view>
+    </view>
+    <swiper current="{{currentData}}" class='swiper' style="height:1040px;" duration="300" bindchange="bindchange">
+      <!-- 笔记 -->
+      <swiper-item>
+        <scroll-view class="scroll-height" scroll-y="true" scroll-with-animation="{{true}}">
+          <view sview class="content">
+            <view class="left">
+              <block wx:for="{{list}}" wx:key="index">
+                <template is="item" data="{{...item}}" wx:if="{{index%2==0}}"></template>
+              </block>
+            </view>
+            <view class="right">
+              <block wx:for="{{list}}" wx:key="index">
+                <template is="item" data="{{...item}}" wx:if="{{index%2==1}}"></template>
+              </block>
+            </view>
+          </view>
+          <template name="item">
+            <view class="item"  bindtap="gotonode">
+              <image class="item-img" src="{{url}}" mode="widthFix"  bindtap="gotonode"></image>
+              <view class="item-title-box">
+                <navigator url="url" class="item-title">{{title}}</navigator>
+              </view>
+              <view class="name">
+                <image class="item-ava" src="{{avatar}}"></image>
+                <text class="name-title">{{name}}</text>
+                <view class="heart">
+                  <text>{{num}}</text>
+                </view>
+              </view>
+            </view>
+          </template>
+        </scroll-view>
+      </swiper-item>
+      <!-- 收藏 -->
+      <swiper-item>
+        <view class="content">
+          <view class="left">
+            <block wx:for="{{list2}}" wx:key="index">
+              <template is="item" data="{{...item}}" wx:if="{{index%2==0}}"></template>
+            </block>
+          </view>
+          <view class="right">
+            <block wx:for="{{list2}}" wx:key="index">
+              <template is="item" data="{{...item}}" wx:if="{{index%2==1}}"></template>
+            </block>
+          </view>
+        </view>
+        <template name="item">
+          <view class="item">
+            <image class="item-img" src="{{url}}" mode="widthFix"></image>
+            <view class="item-title-box">
+              <navigator url="url" class="item-title">{{title}}</navigator>
+            </view>
+            <view class="name">
+              <image class="item-ava" src="{{avatar}}"></image>
+              <text class="name-title">{{name}}</text>
+              <view class="heart">
+                <text>{{num}}</text>
+              </view>
+            </view>
+          </view>
+        </template>
+      </swiper-item>
+      <!-- 喜欢 -->
+      <swiper-item>
+        <view class="content">
+          <view class="left">
+            <block wx:for="{{list1}}" wx:key="index">
+              <template is="item" data="{{...item}}" wx:if="{{index%2==0}}"></template>
+            </block>
+          </view>
+          <view class="right">
+            <block wx:for="{{list1}}" wx:key="index">
+              <template is="item" data="{{...item}}" wx:if="{{index%2==1}}"></template>
+            </block>
+          </view>
+        </view>
+        <template name="item">
+          <view class="item">
+            <image class="item-img" src="{{url}}" mode="widthFix"></image>
+            <view class="item-title-box">
+              <navigator url="url" class="item-title">{{title}}</navigator>
+            </view>
+            <view class="name">
+              <image class="item-ava" src="{{avatar}}"></image>
+              <text class="name-title">{{name}}</text>
+              <view class="heart">
+                <text>{{num}}</text>
+              </view>
+            </view>
+          </view>
+        </template>
+      </swiper-item>
+    </swiper>
+
+    <!-- <view class="_div data-v-107b1d86 user-list">
+      <view class="_div data-v-107b1d86 list-nav">
+        <view bindtap="gotoPageMy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_div data-v-107b1d86 {{[navIndex == 1 ? 'active' : '']}}">我的</view>
+        <view bindtap="gotoPagecollection" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_div data-v-107b1d86 {{[navIndex == 2 ? 'active' : '']}}">收藏</view>
+        <view bindtap="gotoPagelike" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_div data-v-107b1d86 {{[navIndex == 3 ? 'active' : '']}}">喜欢</view>
+      </view>
+      <view class="_div data-v-107b1d86 public-list pd-b auto" wx:if="{{lists.length > 0 && navIndex == 1}}">
+        <view class="_ul data-v-107b1d86 public-list-ul">
+          <view wx:key="index" key="{{index}}" catchtap="handleProxy" data-eventid="{{'6_'+index}}" data-comkey="{{$k}}" wx:for="{{lists}}" wx:for-index="index" wx:for-item="item" class="_li data-v-107b1d86">
+            <view class="_div data-v-107b1d86 cover-wrap">
+              <image src="{{item.coverPic}}" class="_img data-v-107b1d86 cover" mode="aspectFill" lazy-load="{{true}}"></image>
+              <image src="/static/images/video.png" wx:if="{{item.fileType == 'video'}}" class="_img data-v-107b1d86 public_video_icon"></image>
+            </view>
+            <view class="_div data-v-107b1d86 information">
+              <view class="_div data-v-107b1d86 title">{{item.title}}</view>
+              <view class="_div data-v-107b1d86 user" catchtap="handleProxy" data-eventid="{{'5_'+index}}" data-comkey="{{$k}}">
+                <view class="_div data-v-107b1d86 user-l">
+                  <image src="{{item.avatarUrl}}" mode="widthFix" class="_img data-v-107b1d86"></image>
+                  {{item.nickName}}
+                </view>
+                <view class="_div data-v-107b1d86 user-r">
+                  <image src="/static/images/like_gray.png" class="_img data-v-107b1d86"></image>
+                  {{item.like}}
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="_li data-v-107b1d86 public-loading-more" wx:if="{{loading}}">正在加载...</view>
+          <view class="_li data-v-107b1d86 public-loading-more" wx:if="{{listsClose}}">已加载全部</view>
+        </view>
+      </view>
+      <view class="_div data-v-107b1d86 public-list pd-b auto" wx:if="{{collectionList.length > 0 && navIndex == 2}}">
+        <view class="_ul data-v-107b1d86 public-list-ul">
+          <view wx:key="index" key="{{index}}" catchtap="handleProxy" data-eventid="{{'8_'+index}}" data-comkey="{{$k}}" wx:for="{{collectionList}}" wx:for-index="index" wx:for-item="item" class="_li data-v-107b1d86">
+            <view class="_div data-v-107b1d86 cover-wrap">
+              <image src="{{item.coverPic}}" class="_img data-v-107b1d86 cover" mode="aspectFill" lazy-load="{{true}}"></image>
+              <image src="/static/images/video.png" wx:if="{{item.fileType == 'video'}}" class="_img data-v-107b1d86 public_video_icon"></image>
+            </view>
+            <view class="_div data-v-107b1d86 information">
+              <view class="_div data-v-107b1d86 title">{{item.title}}</view>
+              <view class="_div data-v-107b1d86 user" catchtap="handleProxy" data-eventid="{{'7_'+index}}" data-comkey="{{$k}}">
+                <view class="_div data-v-107b1d86 user-l">
+                  <image src="{{item.avatarUrl}}" mode="widthFix" lazy-load="{{true}}" class="_img data-v-107b1d86"></image>
+                  {{item.nickName}}
+                </view>
+                <view class="_div data-v-107b1d86 user-r">
+                  <image src="/static/images/like_gray.png" class="_img data-v-107b1d86"></image>
+                  {{item.like}}
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="_li data-v-107b1d86 public-loading-more" wx:if="{{loading}}">正在加载...</view>
+          <view class="_li data-v-107b1d86 public-loading-more" wx:if="{{listsClose}}">已加载全部</view>
+        </view>
+      </view> <template wx:if="{{lists.length <= 0 && navIndex == 1 || collectionList.length <= 0 && navIndex == 2}}" data="{{...$root[$kk+'0'], $root}}" is="32a97c16"></template>
+    </view> -->
+
+
+
+  <!-- </scroll-view> -->
+</view>
+
+<image class="view2" src='/images/testPhoto/B2.JPG' style="position: relative; left: 24rpx; top: -1783rpx; width: 319rpx; height: 449rpx; display: inline-block; box-sizing: border-box"></image>
+<view style="width: 230rpx; height: 39rpx; display: block; box-sizing: border-box; position: relative; left: 23rpx; top: -1791rpx">只有跑出来的美丽</view>
+
+<view class="view3" style="width: 153rpx; height: 39rpx; display: block; box-sizing: border-box; position: relative; left: 30rpx; top: -1791rpx">踏着春天的气息</view>
+
+<cover-view class="view6" style="width: 69rpx; height: 39rpx; display: block; box-sizing: border-box; border-radius: 6px; position: relative; left: 495rpx; top: -2604rpx">关注</cover-view>
+
+<cover-view class="view6" style="width: 69rpx; height: 39rpx; display: block; box-sizing: border-box; border-radius: 6px; position: relative; left: 619rpx; top: -2643rpx">私聊</cover-view>

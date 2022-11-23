@@ -1,0 +1,32 @@
+/* pages/home/searchrlt/searchrlt.wxss */
+
+
+.image_radius {
+  height: 50px;
+  width: 50px;
+  /* border-radius: 30px; */
+}
+
+
+
+.view1{
+
+  background-color: rgb(250, 249, 248);
+}
+
+.view2{
+  font-size: 30px;
+  color: rgb(208, 210, 211);
+}
+
+.view3{
+  font-size: 15px;
+  color: rgb(11, 12, 12);
+}
+
+.image_radius {
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+}
+

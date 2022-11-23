@@ -1,0 +1,266 @@
+/* pages/home/duifangzhuye/duifangzhuye.wxss */
+
+
+
+.public-index-wrap.data-v-107b1d86 {
+  min-height: 100vh;
+}
+.public-index-wrap .user-wrap.data-v-107b1d86 {
+  display: flex;
+  justify-content: space-between;
+  /* border-top: 2rpx solid rgba(255, 255, 255, 0.3); */
+  color: rgb(0, 0, 0);
+  background: #B3F0DE;
+  padding: 3rpx 10rpx 0;
+}
+.public-index-wrap .Personalizedsignature {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  color: rgb(143, 143, 143);
+  background: #B3F0DE;
+  padding: 3rpx 10rpx 0;
+}
+.public-index-wrap .user-wrap .user-l.data-v-107b1d86 {
+  display: flex;
+  align-items: center;
+}
+.public-index-wrap .user-wrap .user-l ._img.data-v-107b1d86 {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20rpx;
+}
+.public-index-wrap .user-wrap .user-l ._div.data-v-107b1d86 {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.public-index-wrap .user-wrap .user-r ._img.data-v-107b1d86 {
+  width: 40rpx;
+}
+.public-index-wrap .user-focus.data-v-107b1d86 {
+  /* 关注/粉丝/人气 */
+  display: flex;
+  color: rgb(0, 0, 0);
+  position: relative;
+  padding-bottom: 30rpx;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+}
+.public-index-wrap .user-focus.data-v-107b1d86:before {
+  content: "";
+  position: absolute;
+  left: -20%;
+  bottom: 0;
+  width: 140%;
+  height: 100%;
+  background: #B3F0DE;
+  border-radius: 0 0 50% 50%;
+  z-index: -1;
+}
+.public-index-wrap .user-focus ._div.data-v-107b1d86 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  background: #B3F0DE;
+  padding: 20rpx 0;
+  flex: 1;
+}
+.public-index-wrap .user-focus ._div ._span.data-v-107b1d86 {
+  font-weight: bold;
+}
+.public-index-wrap .user-list .list-nav.data-v-107b1d86 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100rpx;
+}
+.public-index-wrap .user-list .list-nav ._div.data-v-107b1d86 {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 32rpx;
+  transition: all 0.2s;
+  position: relative;
+  font-weight: bold;
+  height: 100%;
+  padding: 0 20rpx;
+  flex-grow: 1;
+  /* background: #B3F0DE; */
+  /* border-radius: 40% 40% 40% 40%; */
+}
+.public-index-wrap .user-list .list-nav ._div.data-v-107b1d86:first-child {
+  /* margin-right: 200rpx; */
+}
+.public-index-wrap .user-list .list-nav ._div.data-v-107b1d86:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4rpx;
+  border-radius: 10rpx;
+  background: #615f5f;
+  bottom: 0;
+  left: 0;
+  transition: all 0.2s;
+}
+.public-index-wrap .user-list .list-nav ._div.active.data-v-107b1d86 {
+  color: #615f5f;
+}
+.public-index-wrap .user-list .list-nav ._div.active.data-v-107b1d86:before {
+  width: 100%;
+}
+/* 选项卡 */
+.tab {
+  float: left;
+  width: 33.3333%;
+  text-align: center;
+  padding: 10rpx 0;
+  color: #dadada;
+}
+ 
+/* .topTabSwiper {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  zoom: 1;
+} */
+ 
+.topTabSwiper:after {
+  content: "";
+  clear: both;
+  display: block;
+  
+}
+ 
+.tabBorer {
+  border-bottom: 1px solid #B3F0DE;
+  color: #B3F0DE;
+}
+ 
+.swiper {
+  width: 100%;
+}
+ 
+.swiper_con {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 80rpx 0;
+}
+
+
+/* 瀑布式 */
+/* page {
+  padding: 10rpx;
+} */
+
+.content {
+  text-align: justify;
+}
+
+.item {
+  background-color: #fff;
+  margin: 10rpx 3%;
+  margin-bottom: 20rpx;
+  display: inline-block;
+  width: 96%;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+
+.item-ava {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 20rpx;
+}
+
+.heart {
+  width: 30rpx;
+  height: 26rpx;
+  margin-right: 8rpx;
+}
+
+.heart {
+  display: flex;
+  align-items: center;
+}
+
+.item-img {
+  width: 100%
+}
+
+.item-title {
+  font-size: 24rpx;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  font-family: 'PingFang SC-Medium';
+  color: #1e1e1e;
+  margin: 15rpx;
+  line-height: 27rpx;
+}
+
+.item .name {
+  display: flex;
+  padding: 0 15rpx;
+  margin-top: 20rpx;
+  padding-bottom: 10rpx;
+  align-items: center;
+  font-size: 22rpx;
+  color: #1e1e1e;
+  font-family: 'PingFang SC-Medium';
+}
+
+.name image {
+  flex: 0 0 auto;
+}
+
+.item-title-box {
+  display: flex;
+  position: relative;
+}
+
+.name-title {
+  flex: 1;
+  margin-left: 18rpx;
+  margin-right: 20rpx;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.name text:last-child {
+  color: #c4c4c4;
+  text-decoration: underline;
+  line-height: 10rpx;
+
+}
+
+.left,
+.right {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+}
+
+.view2{
+  border-radius: 20px;
+}
+
+.view3{
+  font-size: 12px;
+  color: rgb(184, 197, 197);
+}
+
+.view6{
+  font-size: 18px;
+  background-color: rgb(194, 190, 185);
+  color: rgb(19, 18, 18);
+}
