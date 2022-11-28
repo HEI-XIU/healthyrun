@@ -1,3 +1,11 @@
+<view class="search" >
+  
+  <input class="search_input" type="text" placeholder="   跑步" placeholder-style="" bindinput="contoin"></input>
+  <image class="image_search" bindtap="search" src='/images/testPhoto/search.png'></image>
+  <image class="image_add" src='/images/testPhoto/friend.png'></image>
+</view>
+
+
 <view class="content">
   <view class="left">
     <block wx:for="{{list}}" wx:key="index">

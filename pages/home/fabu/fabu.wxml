@@ -1,7 +1,5 @@
 <!--pages/home/fabu/fabu.wxml-->
 
-
-
 <image class="image_radius" src='/images/testPhoto/collection/C1.JPG' style="position: relative; left: 15rpx; top: 34rpx; width: 339rpx; height: 337rpx; display: inline-block; box-sizing: border-box"></image>
 
 <image class="image_radius" src='/images/testPhoto/plus.png' style="position: relative; left: 55rpx; top: 34rpx; width: 339rpx; height: 337rpx; display: inline-block; box-sizing: border-box"></image>

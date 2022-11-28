@@ -94,3 +94,39 @@ page {
   vertical-align: top;
   width: 49%;
 }
+
+
+.image_radius {
+  height: 50px;
+  width: 50px;
+  /* border-radius: 30px; */
+}
+
+
+
+.search{
+  display: flex;
+  /*row 横向  column 列表  */
+  flex-direction: row;
+  background-color: rgb(250, 249, 248);
+}
+
+.image_search{
+  height: 80rpx;
+  width:  80rpx;
+  border-radius: 40rpx;
+}
+.search_input{
+  height: 80rpx;
+  width:  580rpx;
+  background-color:#B3F0DE;
+  border-radius: 10rpx;
+  flood-color: rgb(201, 197, 192);
+  font-weight: bold;
+}
+.image_add{
+  height: 80rpx;
+  width:  80rpx;
+  border-radius: 40rpx;
+  background-color:#B3F0DE;
+}

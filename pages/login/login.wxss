@@ -26,6 +26,14 @@ page{
   margin: 5% 0 8% 0;
   border-bottom: 1rpx solid lightgray;
 }
+.user>input{
+  margin: 5% 0 8% 0;
+  border-bottom: 1rpx solid lightgray;
+}
+.pwd>input{
+  margin: 5% 0 8% 0;
+  border-bottom: 1rpx solid lightgray;
+}
 .login-btn{
   width: 100%!important;
   background-color: #2f6afd;

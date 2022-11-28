@@ -12,8 +12,8 @@
     "pages/home/recommendedDaily/recommendedDaily",
     "pages/home/ask/ask",
 
-    "pages/home/search/search",
-    "pages/home/searchrlt/searchrlt",
+    "pages/RunningCircle/search/search",
+    "pages/RunningCircle/addnote/addnote",
     "pages/home/fabu/fabu",
     "pages/home/duifangzhuye/duifangzhuye",
 

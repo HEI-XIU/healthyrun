@@ -43,5 +43,10 @@ Page({
       avatar: '/images/testPhoto/B6.JPG'
     },
     ]
+  },
+  search:function(){
+    wx.navigateTo({
+      url: './search/search',
+    })
   }
 })
