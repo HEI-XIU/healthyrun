@@ -1,75 +1,15 @@
 <!--pages/personinfo/concern/concern.wxml-->
+<!-- <view>{{list.length}}</view>
+<view wx:for="{{list}}" wx:key="index">
+{{item.works}}
+</view> -->
 <view>
-  <view class="userbox">
-    <image src="/static/images/user.png" class="img"></image>
+  <view wx:for="{{list}}" wx:key="index" class="userbox" bindtap="gotoPage">
+    <image src="{{item.head}}" class="img"></image>
     <view class="textbox">
-      <view class="user">用户小A</view>
-      <view class="message">作品 80 粉丝 698</view>
+      <view class="user">{{item.userName}}</view>
+      <view class="message">作品: {{item.works}}  粉丝: {{item.fansNum}}</view>
     </view>
     <button class="btn" size="mini">取消关注</button>
   </view>
-
-  <view class="userbox">
-    <image src="/static/images/user.png" class="img"></image>
-    <view class="textbox">
-      <view class="user">用户小A</view>
-      <view class="message">作品 80 粉丝 698</view>
-    </view>
-    <button class="btn" size="mini">取消关注</button>
-  </view>
-
-  <view class="userbox">
-    <image src="/static/images/user.png" class="img"></image>
-    <view class="textbox">
-      <view class="user">用户小A</view>
-      <view class="message">作品 80 粉丝 698</view>
-    </view>
-    <button class="btn" size="mini">取消关注</button>
-  </view>
-
-  <view class="userbox">
-    <image src="/static/images/user.png" class="img"></image>
-    <view class="textbox">
-      <view class="user">用户小A</view>
-      <view class="message">作品 80 粉丝 698</view>
-    </view>
-    <button class="btn" size="mini">取消关注</button>
-  </view>
-
-  <view class="userbox">
-    <image src="/static/images/user.png" class="img"></image>
-    <view class="textbox">
-      <view class="user">用户小A</view>
-      <view class="message">作品 80 粉丝 698</view>
-    </view>
-    <button class="btn" size="mini">取消关注</button>
-  </view>
-
-  <view class="userbox">
-    <image src="/static/images/user.png" class="img"></image>
-    <view class="textbox">
-      <view class="user">用户小A</view>
-      <view class="message">作品 80 粉丝 698</view>
-    </view>
-    <button class="btn" size="mini">取消关注</button>
-  </view>
-
-  <view class="userbox">
-    <image src="/static/images/user.png" class="img"></image>
-    <view class="textbox">
-      <view class="user">用户小A</view>
-      <view class="message">作品 80 粉丝 698</view>
-    </view>
-    <button class="btn" size="mini">取消关注</button>
-  </view>
-
-  <view class="userbox">
-    <image src="/static/images/user.png" class="img"></image>
-    <view class="textbox">
-      <view class="user">用户小A</view>
-      <view class="message">作品 80 粉丝 698</view>
-    </view>
-    <button class="btn" size="mini">取消关注</button>
-  </view>
-  
 </view>

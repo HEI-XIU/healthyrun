@@ -1,8 +1,17 @@
 // pages/personinfo/personinfo.js
 Page({
-  /**
-   * 页面的初始数据
-   */
+  infodata:{
+    uid:'',
+    head:'',
+    uname:'',
+    popular:'',
+    personality:'',
+    fans:'',
+    follow:'',
+    notelist:[
+    ],
+  },
+  
   data: {
     currentData : 0,
     list2: [{
@@ -91,53 +100,50 @@ Page({
       avatar: '/images/testPhoto/like/l6.JPG'
     },
     ],
-
-    list: [{
-      name: '为什么要在有情绪和压力的时候继续跑步',
-      num: '1',
-      title: '在情绪上头和生活或工作充满压力的时候，保持冷静并继续是一件很难的事',
-      url: '/images/testPhoto/Node/n1.JPG',
-      avatar: '/images/testPhoto/Node/n1.JPG'
-    },
-    {
-      name: '已瘦58斤|你跑步减肥为什么不瘦还会胖',
-      num: '1',
-      title: '很多人坚持跑步几个月，一斤没瘦甚至有的反而胖了，下面罗列了一些问题点和正确方法',
-      url: '/images/testPhoto/Node/n2.JPG',
-      avatar: '/images/testPhoto/Node/n2.JPG'
-    },
-    {
-      name: '为什么说越野跑是跑者的终极归属',
-      num: '1',
-      title: '如果说路跑关注的是距离、配速、心率、步频、步幅，这些技术性的指标，那么越野跑则是关注不一样的风景、变化多端的路况、攀爬、下降',
-      url: '/images/testPhoto/Node/n3.JPG',
-      avatar: '/images/testPhoto/Node/n3.JPG'
-    },
-    {
-      name: '这个冬天一起迎着暖阳奔跑吧',
-      num: '1',
-      title: '冬天迎着暖阳跑步在日落下拉伸放松',
-      url: '/images/testPhoto/Node/n4.JPG',
-      avatar: '/images/testPhoto/Node/n4.JPG'
-    },
-    {
-      name: '空腹晨跑茂，10公里',
-      num: '1',
-      title: '跑步你是如何坚持下来的？:促使自己，每个星期都去跑。如果不能迈出大门，跑步也就中止了。而且我会选择固定的时',
-      url: '/images/testPhoto/Node/n5.JPG',
-      avatar: '/images/testPhoto/Node/n5.JPG'
-    },
-    {
-      name: '自由潜水员的基础训练~长距离跑步',
-      num: '1',
-      title: '跑步对自由潜水帮助在静态跟动态表现提高助益良多，尤其是在深度项目中前提：良好的跑步技术，装备等',
-      url: '/images/testPhoto/Node/n6.JPG',
-      avatar: '/images/testPhoto/Node/n6.JPG'
-    },
-    ]
   },
 
-  onLoad: function (options) {
+  onLoad: function () {
+    let app = getApp();
+    this.setData({
+      ...this.infodata,
+      uid:app.globalData.info.userLoginID,
+      head:app.globalData.info.head,
+      uname:app.globalData.info.userName,
+      popular:'',
+      personality:app.globalData.info.signature,
+      fans:app.globalData.info.fansNum,
+      follow:app.globalData.info.favorNum,
+    })
+    // console.log(this.notelist)
+    // console.log(app.globalData.info.head)
+
+    
+  },
+  onShow:function () {
+    this.getNotelist();
+  },
+  getNotelist(){
+    console.log('1');
+    let app = getApp();
+    wx.request({
+      url: 'http://49.234.210.20/unote.php',//接入自己的接口
+      data: {
+        uid:app.globalData.info.userLoginID,
+      },
+      header: {"Content-Type": "application/x-www-form-urlencoded"},
+      success: (result)=>{
+        app.globalData.notelist=result.data;
+        this.setData({
+          // ...this.notelist,
+          notelist:app.globalData.notelist
+        })
+        // this.infodata.notelist=result.data
+        // console.log(app.globalData.notelist)
+        console.log(this.notelist)
+      },
+    });
+    // console.log(this.notelist)
+    
   },
   //获取当前滑块的index
   bindchange:function(e){
@@ -215,26 +221,11 @@ Page({
       url: '/pages/personinfo/EditYourProfile/EditYourProfile',
     })
   },
-  
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
 
   },
 

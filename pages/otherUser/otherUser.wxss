@@ -113,7 +113,7 @@
 /* 选项卡 */
 .tab {
   float: left;
-  width: 50%;
+  width: 33.3333%;
   text-align: center;
   padding: 10rpx 0;
   color: #dadada;
@@ -139,7 +139,6 @@
  
 .swiper {
   width: 100%;
-  /* height: 100%; */
 }
  
 .swiper_con {
@@ -246,9 +245,4 @@
   display: inline-block;
   vertical-align: top;
   width: 49%;
-}
-
-.scroll-height{
-  flex:1 0 0;
-  height: 100%;
 }

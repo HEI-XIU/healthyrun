@@ -2,28 +2,29 @@
 <view class="mianbox">
   <view class="img">
     <view>头像：</view>
-    <image class="avatar" src="/static/images/avatar.png"></image>
+    <image class="avatar" src="{{head}}"></image>
   </view>
   <view class="name">
     <view>昵称：</view>
-    <input placeholder="用户名小Z" />
+    <input placeholder="{{uname}}" />
 
   </view>
   <view class="sex">
     <view>性别：</view>
-    <view class="btn">
+    <input placeholder="{{sex}}" />
+    <!-- <view class="btn">
       <button class="btn1" size="mini">男</button>
       <button class="btn2" size="mini">女</button>
-    </view>
+    </view> -->
 
   </view>
   <view class="birthday">
     <view>生日：</view>
-    <input placeholder="2022-11-11" />
+    <input placeholder="{{birthday}}" />
   </view>
   <view class="signature">
     <view>签名：</view>
-    <input placeholder="每个人都有快乐的时候，你呢？" />
+    <input class="signature_input" placeholder="{{personality}}"></input>
   </view>
 </view>
 

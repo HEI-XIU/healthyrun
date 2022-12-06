@@ -5,9 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    list:[],
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
@@ -25,8 +24,35 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow() {
-
+  onShow:function () {
+    this.getNotelist();
+  },
+  getNotelist(){
+    console.log('2');
+    let app = getApp();
+    wx.request({
+      url: 'http://49.234.210.20/php/fans/fans.php',//接入自己的接口
+      data: {
+        uid:app.globalData.info.userLoginID,
+      },
+      header: {"Content-Type": "application/x-www-form-urlencoded"},
+      success: (result)=>{
+        
+        app.globalData.followlist=result.data;
+        console.log(app.globalData.followlist)
+        this.setData({
+          // ...this.data,
+          list:app.globalData.followlist
+        })
+        this.list=app.globalData.followlist
+        // console.log(this.list)
+      },
+    });
+  },
+  gotoPage:function () {
+    wx.navigateTo({
+      url: '/pages/home/duifangzhuye/duifangzhuye',
+    })
   },
 
   /**

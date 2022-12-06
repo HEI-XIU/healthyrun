@@ -11,7 +11,7 @@
 
 <cover-view class="view4" style="width: 208rpx; height: 37rpx; display: block; box-sizing: border-box; position: relative; left: 177rpx; top: -133rpx">杭州市第一人民医院</cover-view>
 
-<cover-view class="view5" style="width: 129rpx; height: 56rpx; display: block; box-sizing: border-box; border-radius: 20px; position: relative; left: 554rpx; top: -266rpx">咨询</cover-view>
+<cover-view class="view5" bindtap="jumpToChat" style="width: 129rpx; height: 56rpx; display: block; box-sizing: border-box; border-radius: 20px; position: relative; left: 554rpx; top: -266rpx">咨询</cover-view>
 
 <image class="image_radius" src='/images/testPhoto/doctor1.jpg' style="position: relative; left: 39rpx; top: -318rpx; width: 130rpx; height: 130rpx; display: inline-block; box-sizing: border-box"></image>
 

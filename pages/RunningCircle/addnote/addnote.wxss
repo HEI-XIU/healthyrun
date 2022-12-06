@@ -1,1 +1,88 @@
-/* pages/RunningCircle/addnote/addnote.wxss */
+.public-index-wrap  {
+  position: relative;
+}
+.public-index-wrap .release-wrap  {
+  padding: 30rpx 20rpx;
+  box-sizing: border-box;
+}
+.public-index-wrap .files  {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.public-index-wrap .files .li  {
+  width: calc(33vw - 30rpx);
+  height: calc(33vw - 30rpx);
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+.public-index-wrap .files .li :nth-child(3n) {
+  margin-right: 0;
+}
+.public-index-wrap .files .li .cover  {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.public-index-wrap .files .li .video_icon  {
+  position: absolute;
+  right: 10rpx;
+  top: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.public-index-wrap .files .li .video  {
+  width: 100%;
+  height: 100%;
+}
+.public-index-wrap .content  {
+  font-size: 28rpx;
+}
+.public-index-wrap .content .title  {
+  border-bottom: 2rpx solid #eee;
+  padding: 30rpx 0;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.public-index-wrap .content .describe  {
+  border-bottom: 2rpx solid #eee;
+  padding: 30rpx 0;
+}
+.public-index-wrap .content .describe .textarea  {
+  width: 100%;
+  height: 300rpx;
+}
+.public-index-wrap .content .address  {
+  padding: 30rpx 0;
+  border-bottom: 2rpx solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.public-index-wrap .content .address .address-l  {
+  display: flex;
+  align-items: center;
+}
+.public-index-wrap .content .address .address-l .img  {
+  width: 28rpx;
+  margin-right: 12rpx;
+}
+.public-index-wrap .content .address .address-r .img  {
+  display: block;
+  width: 16rpx;
+}
+.div_add_btn{
+  font-size: 32rpx;
+  font-weight: bold;
+  background-color: "#B3F0DE";
+  display: flex;
+  border-radius: 40rpx;
+  align-items: center;
+  justify-content: center;
+  height: 100rpx;
+  width: 100%;
+  position: fixed; 
+  bottom: 0;
+  padding-bottom: 20rpx;
+}

@@ -1,4 +1,4 @@
-// pages/home/fabu/fabu.js
+// pages/RunningCircle/note/note.js
 Page({
 
   /**

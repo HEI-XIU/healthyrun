@@ -1,34 +1,31 @@
 <view class="search" >
-  
   <input class="search_input" type="text" placeholder="   跑步" placeholder-style="" bindinput="contoin"></input>
   <image class="image_search" bindtap="search" src='/images/testPhoto/search.png'></image>
-  <image class="image_add" src='/images/testPhoto/friend.png'></image>
+  <image class="image_add" bindtap="addnote" src='/images/testPhoto/add.png'></image>
 </view>
-
-
 <view class="content">
   <view class="left">
-    <block wx:for="{{list}}" wx:key="index">
+    <block wx:for="{{circlelist}}" wx:key="index">
       <template is="item" data="{{...item}}" wx:if="{{index%2==0}}"></template>
     </block>
   </view>
   <view class="right">
-    <block wx:for="{{list}}" wx:key="index">
+    <block wx:for="{{circlelist}}" wx:key="index">
       <template is="item" data="{{...item}}" wx:if="{{index%2==1}}"></template>
     </block>
   </view>
 </view>
-<template name="item">
-  <view class="item">
-    <image class="item-img" src="{{url}}" mode="widthFix"></image>
+<template bindtap="note" name="item">
+  <view  bindtap="note" class="item">
+    <image class="item-img" src="{{notePhoto}}" mode="widthFix"></image>
     <view class="item-title-box">
-      <navigator url="url" class="item-title">{{title}}</navigator>
+      <navigator url="url" class="item-title">{{noteContent}}</navigator>
     </view>
     <view class="name">
-      <image class="item-ava" src="{{avatar}}"></image>
-      <text class="name-title">{{name}}</text>
+      <image class="item-ava" src="{{headPhoto}}"></image>
+      <text class="name-title">{{noteTitle}}</text>
       <view class="heart">
-        <text>{{num}}</text>
+        <text>{{likesNum}}</text>
       </view>
     </view>
   </view>

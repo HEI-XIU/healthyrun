@@ -1,2 +1,35 @@
-<!--pages/RunningCircle/addnote/addnote.wxml-->
-<text>pages/RunningCircle/addnote/addnote.wxml</text>
+
+  <view class="public-index-wrap">
+    <view class="release-wrap">
+      <view class="ul files">
+        <view class="li">
+          <image src="/images/testPhoto/plus.png" class="_img cover"></image>
+          <!-- 数据有用 -->
+          <!-- <video src="" class="_video cover"></video> -->
+          <!-- <image src="" class="_img video_icon"></image> -->
+        </view>
+        <view class="li">
+          <image src="/images/testPhoto/plus.png" class="img cover"></image>
+        </view>
+      </view>
+      <view class="content">
+        <view class="title">
+          <input type="text" placeholder="输入标题会引起更多人关注" class="_input " />
+        </view>
+        <view class="describe">
+          <textarea placeholder="输入正文" class="_textarea "/>
+        </view>
+        <!-- <view class="_div address">
+          <view class="_div address-l">
+            <image src="" class="_img "></image> 地点
+          </view>
+          <view class="_div address-r">
+            <image src="" class="_img "></image>
+          </view>
+        </view> -->
+      </view>
+    </view>
+    <view class="_div public-btn-class fixed">
+      <view style="background-color: #B3F0DE" class="div_add_btn" >发布作品</view>
+    </view>
+  </view>

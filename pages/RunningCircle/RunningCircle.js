@@ -1,5 +1,6 @@
 Page({
   data: {
+    circlelist:[],
     list: [{
       name: '管它终点有多远，JUST DO IT',
       num: '1',
@@ -44,9 +45,37 @@ Page({
     },
     ]
   },
+  onShow:function () {
+    this.getNotelist();
+  },
+  getNotelist(){
+    console.log('1');
+    let app = getApp();
+    wx.request({
+      url: 'http://49.234.210.20/runcircle.php',//接入自己的接口
+      header: {"Content-Type": "application/x-www-form-urlencoded"},
+      success: (result)=>{
+        app.globalData.circlelist=result.data;
+        this.setData({
+          circlelist:app.globalData.circlelist
+        })
+        console.log(this.circlelist)
+      },
+    });
+  },
   search:function(){
     wx.navigateTo({
       url: './search/search',
     })
-  }
+  },
+  addnote:function(){
+    wx.navigateTo({
+      url: './addnote/addnote',
+    })
+  },
+  note:function(){
+    wx.navigateTo({
+      url: '/pages/RunningCircle/note/note',
+    })
+  },
 })

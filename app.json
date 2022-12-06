@@ -5,6 +5,7 @@
     "pages/RunningCircle/RunningCircle",
     "pages/message/message",
     "pages/personinfo/personinfo",
+    "pages/otherUser/otherUser",
 
     "pages/home/AnswerQuestionsDaily/AnswerQuestionsDaily",
     "pages/home/AnswerQuestionsDaily/test/test",
@@ -14,16 +15,17 @@
 
     "pages/RunningCircle/search/search",
     "pages/RunningCircle/addnote/addnote",
-    "pages/home/fabu/fabu",
+    "pages/RunningCircle/note/note",
     "pages/home/duifangzhuye/duifangzhuye",
 
     "pages/message/doctorchat/doctorchat",
-      "pages/message/userchat/userchat",
-      "pages/index/index",
+    "pages/message/userchat/userchat",
       
-      "pages/personinfo/concern/concern",
-      "pages/personinfo/fans/fans",
-      "pages/logs/logs"
+    "pages/personinfo/concern/concern",
+    "pages/personinfo/fans/fans",
+    "pages/personinfo/EditYourProfile/EditYourProfile",
+
+    "pages/index/index"
       
   ],
   "window": {

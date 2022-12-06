@@ -25,6 +25,8 @@ Page({
     } else{
       wx.request({
         url: 'http://49.234.210.20/Login.php',//接入自己的接口
+        // url: 'http://49.234.210.20/php/runcircle.php',//接入自己的接口
+
         data: {
           password:this.data.password,
           username:this.data.username
@@ -32,9 +34,12 @@ Page({
         
         header: {"Content-Type": "application/x-www-form-urlencoded"},
         success: (result)=>{
-          console.log(this.data);
-          console.log(result);
-          if (!result.data){
+          // console.log(this.data);
+          // console.log(result);
+          if (result.data&&result.data!="数据库连接失败"){
+            let app = getApp();
+            app.globalData.info=result.data;
+            console.log(app.globalData.info);
             wx.switchTab({
               url: '../home/home'//成功跳到主页
             })

@@ -1,27 +1,18 @@
-// pages/personinfo/note/note.js
+// pages/otherUser/otherUser.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    uid:'',
-    item:[],
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function () {
-    let app = getApp();
-    
-    this.setData({
-      ...this.item,
-      uid:app.globalData.info.userID,
-    })
-    console.log(app.globalData.info.userID)
+  onLoad(options) {
 
-    
   },
 
   /**
