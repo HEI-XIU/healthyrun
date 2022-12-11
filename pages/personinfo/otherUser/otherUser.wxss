@@ -246,3 +246,10 @@
   vertical-align: top;
   width: 49%;
 }
+.btn2{
+margin-left:10rpx ;
+
+}
+.btn3{
+  margin-left:270rpx ;
+}

@@ -5,18 +5,18 @@
 </view>
 <view class="content">
   <view class="left">
-    <block wx:for="{{circlelist}}" wx:key="index">
+    <block wx:for="{{circlelist}}" wx:for-item="item"  wx:key="index">
       <template is="item" data="{{...item}}" wx:if="{{index%2==0}}"></template>
     </block>
   </view>
   <view class="right">
-    <block wx:for="{{circlelist}}" wx:key="index">
+    <block wx:for="{{circlelist}}" wx:for-item="item"  wx:key="index">
       <template is="item" data="{{...item}}" wx:if="{{index%2==1}}"></template>
     </block>
   </view>
 </view>
-<template bindtap="note" name="item">
-  <view  bindtap="note" class="item">
+<template name="item" >
+  <view  bindtap="note" id="{{noteID}}" data-writer="{{writer}}" data-item="{{item}}" class="item">
     <image class="item-img" src="{{notePhoto}}" mode="widthFix"></image>
     <view class="item-title-box">
       <navigator url="url" class="item-title">{{noteContent}}</navigator>

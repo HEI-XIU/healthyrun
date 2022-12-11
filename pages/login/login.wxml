@@ -12,6 +12,6 @@
     <button bindtap="loginNow" class="login-btn" style="position: relative; left: 0rpx; top: 14rpx">立即登录</button>
     <view class="three-line">一一一一一第三方登录一一一一一</view>
     <button class="login-btn" style="background-color: green; position: relative; left: 0rpx; top: -24rpx">微信登录</button>
-    <view class="enroll">没有账户？ 注册</view>
+    <view class="enroll" bindtap="register" >没有账户？ 注册</view>
   </view>
 </view>

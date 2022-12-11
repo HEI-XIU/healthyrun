@@ -1,1 +1,59 @@
-/* pages/RunningCircle/note/note.wxss */
+.picture {
+  margin-bottom: 30rpx;
+  height: 950rpx;
+  width: 750rpx;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  height: 100%;
+  width: 100%;
+}
+.title{
+  margin-top: 10rpx;
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-bottom: 30rpx;
+}
+.content{
+  margin-top: 10rpx;
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+  font-size: 34rpx;
+  margin-bottom: 30rpx;
+  line-height: 1.5rem;
+}
+.time{
+  margin-top: 10rpx;
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+  font-size: 25rpx;
+  margin-bottom: 30rpx;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+.user{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+.head{
+  height: 90rpx;
+  width: 90rpx;
+  border-radius:80rpx ;
+  margin-left: 20rpx;
+}
+.btn1{
+  margin-left: 40rpx;
+}
+.btn2{
+  margin-left: 10rpx;
+}
+.btn3{
+  margin-left: 180rpx;
+}

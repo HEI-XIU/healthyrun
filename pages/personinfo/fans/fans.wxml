@@ -1,10 +1,14 @@
 <view>
-  <view wx:for="{{list}}" wx:key="index" class="userbox" bindtap="gotoPage">
-    <image src="{{item.head}}" class="img"></image>
-    <view class="textbox">
-      <view class="user">{{item.userName}}</view>
-      <view class="message">作品: {{item.works}}  粉丝: {{item.fansNum}}</view>
+  <view wx:for="{{list}}" wx:key="index" class="userbox" >
+    <view>{{item.userLoginID}}</view>
+    <view class="userbox" bindtap="gotoPage" data-otheruid="{{item.userLoginID}}" >
+      <image src="{{item.head}}" class="img"></image>
+      <view class="textbox">
+        <view class="user">{{item.userName}}</view>
+        <view class="message">作品: {{item.works}} 粉丝: {{item.fansNum}}</view>
+      </view>
     </view>
-    <button class="btn" size="mini">私聊</button>
+
+    <button class="btn" size="mini" bindtap="chats">私聊</button>
   </view>
 </view>

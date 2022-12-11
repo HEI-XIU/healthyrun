@@ -130,5 +130,10 @@ Page({
         },
       });
     }
+  },
+  register:function () {
+    wx.navigateTo({
+      url: '/pages/register/register',
+    })
   }
 })

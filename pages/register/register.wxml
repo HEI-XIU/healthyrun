@@ -1,0 +1,29 @@
+<view class="login-container" style="width: 750rpx; height: 1205rpx; display: block; box-sizing: border-box">
+  <image src='/images/testPhoto/logo.png' class="img"></image>
+  <view class="title">注册账户</view>
+  <view class="login-box" style="width: 600rpx; height: 308rpx; display: block; box-sizing: border-box">
+    <label>用户名 :</label>
+    <input placeholder="请创建您的用户名"/>
+    <label>密码 :</label>
+    <input placeholder="请创建您的密码"/>
+    <label>确认密码 :</label>
+    <input placeholder="请确认您的密码"/>
+    <label>请选择身份 :</label>
+    <!-- 下拉框 -->
+    <view class='top-selected' bindtap='bindShowMsg' style="width: 357rpx; height: 52rpx; display: flex; box-sizing: border-box">
+      <text>{{identity}}</text>
+      <image src='/images/testPhoto/down.png' style="position: absolute; left: 425rpx; top: 971rpx; width: 33rpx; height: 17rpx; display: block; box-sizing: border-box"></image>
+    </view>
+    <view class='top' style="width: 600rpx; height: 94rpx; display: block; box-sizing: border-box">
+
+    <!-- 下拉需要显示的列表 -->
+    <view class="select_box" wx:if="{{select}}">
+      <view wx:for="{{all_select}}" wx:key="unique">
+        <view class="select_one" bindtap="mySelect" data-name="{{item}}">{{item}}</view>
+      </view>
+    </view>
+  </view>
+
+    <button bindtap="loginNow" class="login-btn" style="position: relative; left: 0rpx; top: 31rpx">立即注册</button>
+  </view>
+</view>

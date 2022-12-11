@@ -1,0 +1,61 @@
+<view class="_div data-v-107b1d86 public-index-wrap">
+    <view class="_div data-v-107b1d86 user-wrap" wx:if="{{!userInfo}}">
+      <view class="_div data-v-107b1d86 user-l" catchtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <image src="{{otheruser.head}}" class="_img data-v-107b1d86"></image>
+        <view class="_div data-v-107b1d86">{{otheruser.userName}}</view>
+        <button bindtap='btn3' class="btn3" size="mini">关注</button>
+        <button bindtap='btnchat' class="btn2" size="mini">私聊</button>
+      </view>
+    </view>
+
+    <view class="_div data-v-107b1d86 Personalizedsignature">{{otheruser.signature}}</view>
+    <view class="_div data-v-107b1d86 user-focus" ref="informationMain">
+      <view class="_div data-v-107b1d86"><label class="_span data-v-107b1d86">{{otheruser.favorNum}}</label>
+        <view class="_p data-v-107b1d86">关注</view>
+      </view>
+      <view class="_div data-v-107b1d86"><label class="_span data-v-107b1d86">{{otheruser.fansNum}}</label>
+        <view class="_p data-v-107b1d86">粉丝</view>
+      </view>
+      <view class="_div data-v-107b1d86"><label class="_span data-v-107b1d86">{{focusObj.collection + focusObj.like || 1024 }}</label>
+        <view class="_p data-v-107b1d86">人气</view>
+      </view>
+    </view>
+
+    <view class='topTabSwiper'>
+      <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}' data-current="0" bindtap='checkCurrent' style="width: 752rpx; height: 60rpx; display: block; box-sizing: border-box">笔记</view>
+    </view>
+    <swiper current="{{currentData}}" class='swiper' style="height:1040px;" duration="300" bindchange="bindchange">
+      <!-- 笔记 -->
+      <swiper-item>
+      <scroll-view class="scroll-height" scroll-y="true" scroll-with-animation="{{true}}">
+        <view sview class="content">
+          <view class="left">
+            <block wx:for="{{notelist}}" wx:key="index">
+              <template is="item1" data="{{...item}}" wx:if="{{index%2==0}}"></template>
+            </block>
+          </view>
+          <view class="right">
+            <block wx:for="{{notelist}}" wx:key="index">
+              <template is="item1" data="{{...item}}" wx:if="{{index%2==1}}"></template>
+            </block>
+          </view>
+        </view>
+        <template name="item1">
+          <view class="item" bindtap="gotonode">
+            <image class="item-img" src="{{notePhoto}}" mode="widthFix" bindtap="gotonode"></image>
+            <view class="item-title-box">
+              <navigator url="url" class="item-title">{{noteContent}}</navigator>
+            </view>
+            <view class="name">
+              <image class="item-ava" src="{{headPhoto}}"></image>
+              <text class="name-title">{{noteTitle}}</text>
+              <view class="heart">
+                <text>{{likesNum}}</text>
+              </view>
+            </view>
+          </view>
+        </template>
+      </scroll-view>
+    </swiper-item>
+    </swiper>
+</view>

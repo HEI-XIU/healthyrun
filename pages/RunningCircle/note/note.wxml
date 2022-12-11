@@ -1,2 +1,24 @@
-<!--pages/RunningCircle/note/note.wxml-->
-<text>pages/RunningCircle/note/note.wxml</text>
+<view class="picture">
+  <image src='{{noteContent.notePhoto}}' class="img"></image>
+</view>
+
+
+<view class="title">
+  <text class="text-bold" style="position: relative;">{{noteContent.noteTitle}}</text>
+</view>
+
+<view class="content">
+  <text class="text-bold" style="position: relative;">{{noteContent.noteContent}}</text>
+</view>
+<view class="time">
+  <text class="text-bold">{{noteContent.publishTime}}</text>
+  <button bindtap='btnFavor' class="btn3" size="mini">{{isfavor}}</button>
+  <button bindtap='btnLike' class="btn2" size="mini">{{islike}}</button>
+  
+</view>
+<view class="user" id="123" data-id="1234">
+  <image class="head" src="{{noteContent.headPhoto}}"  id="{{noteContent.writer}}" bindtap="user"></image>
+  <!-- <text>{{noteContent.writer}}</text> -->
+  <button bindtap='btnconcern' class="btn1" size="mini" id="{{noteContent.writer}}" >{{state}}</button>
+</view>
+<view>{{data.state}}</view>

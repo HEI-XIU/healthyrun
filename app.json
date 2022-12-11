@@ -1,11 +1,12 @@
 {
   "pages": [
     "pages/login/login",
+    "pages/register/register",
     "pages/home/home",
     "pages/RunningCircle/RunningCircle",
     "pages/message/message",
     "pages/personinfo/personinfo",
-    "pages/otherUser/otherUser",
+    "pages/personinfo/otherUser/otherUser",
 
     "pages/home/AnswerQuestionsDaily/AnswerQuestionsDaily",
     "pages/home/AnswerQuestionsDaily/test/test",
@@ -16,7 +17,6 @@
     "pages/RunningCircle/search/search",
     "pages/RunningCircle/addnote/addnote",
     "pages/RunningCircle/note/note",
-    "pages/home/duifangzhuye/duifangzhuye",
 
     "pages/message/doctorchat/doctorchat",
     "pages/message/userchat/userchat",

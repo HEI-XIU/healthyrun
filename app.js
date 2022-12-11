@@ -2,10 +2,16 @@
 App({
   globalData:{
     info:[],
+    otherinfo:[],
     notelist:[],
+    concrenlist:[],
     circlelist:[],
     followlist:[],
     fanslist:[],
+    noteID:'',
+    writer:'',
+    noteContent:[],
+
   },
   onLaunch: function () {
     if (!wx.cloud) {
