@@ -3,11 +3,11 @@
   <view class="title">注册账户</view>
   <view class="login-box" style="width: 600rpx; height: 308rpx; display: block; box-sizing: border-box">
     <label>用户名 :</label>
-    <input placeholder="请创建您的用户名"/>
+    <input placeholder="请创建您的用户名" bindinput="name"/>
     <label>密码 :</label>
-    <input placeholder="请创建您的密码"/>
+    <input placeholder="请创建您的密码" bindinput="pw"/>
     <label>确认密码 :</label>
-    <input placeholder="请确认您的密码"/>
+    <input placeholder="请确认您的密码" bindinput="repw"/>
     <label>请选择身份 :</label>
     <!-- 下拉框 -->
     <view class='top-selected' bindtap='bindShowMsg' style="width: 357rpx; height: 52rpx; display: flex; box-sizing: border-box">
@@ -24,6 +24,6 @@
     </view>
   </view>
 
-    <button bindtap="loginNow" class="login-btn" style="position: relative; left: 0rpx; top: 31rpx">立即注册</button>
+    <button bindtap="register" class="login-btn" style="position: relative; left: 0rpx; top: 31rpx">立即注册</button>
   </view>
 </view>

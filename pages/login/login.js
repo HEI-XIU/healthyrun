@@ -25,11 +25,12 @@ Page({
     } else{
       wx.request({
         url: 'http://49.234.210.20/Login.php',//接入自己的接口
-        // url: 'http://49.234.210.20/php/runcircle.php',//接入自己的接口
+        // url: 'http://43.143.216.10:8012/Login',//接入自己的接口
 
         data: {
+          username:this.data.username,
           password:this.data.password,
-          username:this.data.username
+         
         },
         
         header: {"Content-Type": "application/x-www-form-urlencoded"},
@@ -95,7 +96,7 @@ Page({
     } else{
       wx.request({
         url: 'https://example.com/onLogin',//接入自己的接口
-        data: {password:this.data.password,username:this.data.username},
+        data: {username:this.data.username,password:this.data.password},
         header: {"Content-Type": "application/x-www-form-urlencoded"},
         success: (result)=>{
           if (result.data.code === 200){

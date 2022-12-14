@@ -10,6 +10,7 @@ Page({
     console.log('1');
     wx.request({
       url: 'http://49.234.210.20/runcircle.php',//接入自己的接口
+      // url: 'http://43.143.216.10:8012/note/runcircle',
       header: {"Content-Type": "application/x-www-form-urlencoded"},
       success: (result)=>{
         app.globalData.circlelist=result.data;

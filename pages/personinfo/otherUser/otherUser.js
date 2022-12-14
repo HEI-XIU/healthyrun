@@ -51,6 +51,7 @@ Page({
   reflesh(){
     wx.request({
       url: 'http://49.234.210.20/php/reflesh.php',//接入自己的接口
+      // url:'http://43.143.216.10:8012/note/userNote',
       data: {
         uid:app.globalData.info.userLoginID,
       },
@@ -66,6 +67,7 @@ Page({
     // console.log('2');
     wx.request({
       url: 'http://49.234.210.20/unote.php',//接入自己的接口
+      // url:'http://43.143.216.10:8012/note/userNote',
       data: {
         uid:app.globalData.otherinfo.userLoginID,
       },

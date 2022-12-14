@@ -47,7 +47,7 @@
       {
         "pagePath": "pages/RunningCircle/RunningCircle",
         "text": "跑友圈",
-        "iconPath": "images/Running1.png",
+        "iconPath": "images/RunningMan.png",
         "selectedIconPath": "images/Running1.png",
         "selectedColor": "#000000",
         "color": "＃696969"
