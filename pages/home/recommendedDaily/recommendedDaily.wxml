@@ -1,17 +1,30 @@
 <!--pages/recommendedDaily/recommendedDaily.wxml-->
-<image src='/images/testPhoto/test1.jpg' class="img"></image>
+<image src='/images/testPhoto/test1.jpg' class="img" style="width: 615rpx; height: 465rpx; display: inline-block; box-sizing: border-box"></image>
 
-<view class="title">
-  <text decode="{{true}}">关于运动健身的几点建议</text>
+<view class="title" style="position: relative; left: 20rpx; top: -10rpx; width: 711rpx; height: 115rpx; display: block; box-sizing: border-box">
+  {{questionList[index].question}}
 </view>
-<view class="font-settings">
-  
-  <text decode="{{true}}">&ensp;&ensp;&ensp;&ensp;经常运动可预防各种疾病。如心脏病、中风、高血压、动脉栓塞、肥胖病、胆石症、糖尿病和骨质疏松症等,可延长平均寿命,缓解由各种疾患引起的疼痛,增强耐力和体力,使体魄强健,消除紧张压力,松弛身心,改善睡眠并可使人心情愉快。\n&ensp;&ensp;&ensp;&ensp;但运动健身要遵循一定规律,才能更有效地达到健身要求。
-  </text>
-  </view>
+
+<view class="content" style="position: relative; left: 33rpx; top: -19rpx; width: 683rpx; height: 392rpx; display: block; box-sizing: border-box">
+  <text class="text-bold" style="position: relative;">内容</text>
+      {{questionList[index].question2}}
+  <text class="text-bold" style="position: relative;">\n</text>
+  <text class="text-bold" style="position: relative;">内容</text>
+      {{questionList[index].question3}}
+  <text class="text-bold" style="position: relative;">\n</text>
+  <text class="text-bold" style="position: relative;">内容</text>
+  <text class="text-bold" style="position: relative;">\n</text>
+  <text class="text-bold" style="position: relative;">内容</text>
+  <text class="text-bold" style="position: relative;">\n</text>
+  <text class="text-bold" style="position: relative;">内容</text>
+  <text class="text-bold" style="position: relative;">\n</text>
+  <text class="text-bold" style="position: relative;">内容</text>
+
+</view>
+
 <view class="btns">
-  <button class="btn" size="mini">上一个</button>
-  <button class="btn"size="mini">下一个</button>
+  <button bindtap='btn1' class="btn1" size="mini">上一个</button>
+  <button bindtap='btn2' class="btn2"size="mini">下一个</button>
 </view>
 
 

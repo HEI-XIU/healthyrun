@@ -8,6 +8,7 @@ Page({
     otheruser:'',
     notelist:[
     ],
+    state:'',
   },
 
   /**
@@ -38,7 +39,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow:function () {
-
+    this.isconcern();
     this.setData({
       otheruser:app.globalData.otherinfo
     })
@@ -55,8 +56,8 @@ Page({
       },
       header: {"Content-Type": "application/x-www-form-urlencoded"},
       success: (result)=>{
-        console.log(3)
-        console.log(result)
+        // console.log(3)
+        // console.log(result)
         app.globalData.info=result.data;
       },
     });
@@ -70,7 +71,7 @@ Page({
       },
       header: {"Content-Type": "application/x-www-form-urlencoded"},
       success: (result)=>{
-        console.log(result.data)
+        // console.log(result.data)
         app.globalData.notelist=result.data;
         this.setData({
           // ...this.notelist,
@@ -79,6 +80,101 @@ Page({
         // console.log(this.notelist)
       },
     });
+  },
+  isconcern() {
+    wx.request({
+      url: 'http://49.234.210.20/php/fans/isconcern.php', //接入自己的接口
+      data: {
+        myid: app.globalData.info.userLoginID,
+        otherid: app.globalData.otherinfo.userLoginID
+      },
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      success: (result) => {
+        // console.log(result.data)
+        if (result.data) {
+          this.setData({
+            state: "取消关注"
+          })
+        } else {
+          this.setData({
+            state: "关注"
+          })
+        }
+        // console.log(app.globalData.info.userLoginID)
+        // console.log(app.globalData.writer)
+      },
+    });
+  },
+  btnconcern: function (e) {
+    // console.log(this.data.state)
+    var that = this
+    if (that.data.state == "取消关注") {
+      wx.request({
+        url: 'http://49.234.210.20/php/fans/disfollow.php', //删除的phpSQL语句
+        data: {
+          myid: app.globalData.info.userLoginID,
+          otherid: app.globalData.otherinfo.userLoginID
+        },
+        success: (result) => {
+          console.log(app.globalData.info.userLoginID)
+          console.log(app.globalData.writer)
+          this.setData({
+            state: "关注"
+          })
+        }
+      })
+      wx.request({
+        url: 'http://49.234.210.20/php/fans/fans-.php', //更新粉丝数
+        data: {
+          otherid: app.globalData.otherinfo.userLoginID
+          // myid:app.globalData.info.userLoginID
+        },
+        success: (result) => {}
+      })
+      wx.request({
+        url: 'http://49.234.210.20/php/fans/favor-.php', //更新关注数
+        data: {
+          // otherid:e.currentTarget.dataset.otheruid,
+          myid: app.globalData.info.userLoginID
+        },
+        success: (result) => {}
+      })
+      // that.onShow();
+    } else if (that.data.state == "关注") {
+      wx.request({
+        url: 'http://49.234.210.20/php/fans/addconcern.php', //添加的phpSQL语句
+        data: {
+          myid: app.globalData.info.userLoginID,
+          otherid: app.globalData.otherinfo.userLoginID
+        },
+        success: (result) => {
+          console.log(2)
+          console.log(result.data)
+          this.setData({
+            state: "取消关注"
+          })
+        }
+      })
+      wx.request({
+        url: 'http://49.234.210.20/php/fans/fans+.php', //更新粉丝数
+        data: {
+          otherid: app.globalData.otherinfo.userLoginID
+          // myid:app.globalData.info.userLoginID
+        },
+        success: (result) => {}
+      })
+      wx.request({
+        url: 'http://49.234.210.20/php/fans/favor+.php', //更新关注数
+        data: {
+          // otherid:e.currentTarget.dataset.otheruid,
+          myid: app.globalData.info.userLoginID
+        },
+        success: (result) => {}
+      })
+      // that.onShow();
+    }
   },
 
   /**

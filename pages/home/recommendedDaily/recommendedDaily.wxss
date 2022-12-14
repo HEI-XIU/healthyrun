@@ -46,7 +46,18 @@ button{
   justify-content: center;
   width: 82%;
 }
-.btn{
+.btn1{
+  margin-right: 10rpx;
+  /* height: 100rpx; */
+  width:70% ;
+  color: rgb(54, 52, 52);
+  font-size: 50rpx ;
+  font-family: cursive ;
+  border-radius: 10px;
+  background-color: #B3F0DE ;
+  box-shadow: 12rpx 12rpx 8rpx rgba(0, 0, 0, 0.15);
+}
+.btn2{
   margin-right: 10rpx;
   /* height: 100rpx; */
   width:70% ;
@@ -70,4 +81,7 @@ image{
 .img{
   /*  阴影 */
 box-shadow: 12rpx 12rpx 8rpx rgba(0, 0, 0, 0.15);
+}
+.text-bold{
+  color:white;
 }

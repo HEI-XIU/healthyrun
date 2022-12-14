@@ -1,6 +1,6 @@
 <view>
   <view wx:for="{{list}}" wx:key="index" class="userbox" >
-    <view>{{item.userLoginID}}</view>
+    <!-- <view>{{item.userLoginID}}</view> -->
     <view class="userbox" bindtap="gotoPage" data-otheruid="{{item.userLoginID}}" >
       <image src="{{item.head}}" class="img"></image>
       <view class="textbox">

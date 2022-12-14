@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#B3F0DE",
+  "navigationBarTitleText": "聊天",
+  "backgroundColor": "#B3F0DE"
 }

@@ -3,7 +3,7 @@
       <view class="_div data-v-107b1d86 user-l" catchtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
         <image src="{{otheruser.head}}" class="_img data-v-107b1d86"></image>
         <view class="_div data-v-107b1d86">{{otheruser.userName}}</view>
-        <button bindtap='btn3' class="btn3" size="mini">关注</button>
+        <button bindtap='btnconcern' class="btn3" size="mini" id="{{otheruser.userLoginID}}" >{{state}}</button>
         <button bindtap='btnchat' class="btn2" size="mini">私聊</button>
       </view>
     </view>
