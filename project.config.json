@@ -1,11 +1,5 @@
 {
-  "appid": "wx5f469b9c544d3aee",
   "compileType": "miniprogram",
-  "libVersion": "2.27.1",
-  "packOptions": {
-    "ignore": [],
-    "include": []
-  },
   "setting": {
     "urlCheck": true,
     "es6": true,
@@ -26,8 +20,6 @@
     "compileHotReLoad": false,
     "lazyloadPlaceholderEnable": false,
     "useMultiFrameRuntime": true,
-    "useApiHook": true,
-    "useApiHostProcess": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -48,6 +40,11 @@
     "tabIndent": "insertSpaces",
     "tabSize": 2
   },
-  "projectname": "%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C",
-  "condition": {}
+  "condition": {},
+  "libVersion": "2.27.1",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "appid": "wx5f469b9c544d3aee"
 }
